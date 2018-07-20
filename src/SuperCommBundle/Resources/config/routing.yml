@@ -1,0 +1,23 @@
+super_comm_homepage:
+    path:     /bienvenue
+    defaults: { _controller: SuperCommBundle:Default:index }
+
+super_comm_conseilMinute:
+    path:     /conseil-a-la-minute
+    defaults: { _controller: SuperCommBundle:Default:conseilMinute }
+
+super_comm_offres:
+    path:     /nos-offres
+    defaults: { _controller: SuperCommBundle:Default:offres }
+
+super_comm_experts:
+    path:     /nos-experts
+    defaults: { _controller: SuperCommBundle:Default:experts }
+
+super_comm_ressources:
+    path:     /vos-ressources
+    defaults: { _controller: SuperCommBundle:Default:ressources }
+
+super_comm_inscription:
+    path:     /inscription
+    defaults: { _controller: SuperCommBundle:Default:inscription }

@@ -1,0 +1,4 @@
+services:
+#    super_comm.example:
+#        class: SuperCommBundle\Example
+#        arguments: ["@service_id", "plain_value", "%parameter%"]

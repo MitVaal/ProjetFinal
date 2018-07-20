@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping"
+                  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping
+                  http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+
+    <entity name="SuperCommBundle\Entity\Prospect" repository-class="SuperCommBundle\Repository\Prospect">
+        <id name="id" type="bigint" column="id">
+            <generator strategy="AUTO"/>
+        </id>
+        <field name="civility" type="string" column="civility"/>
+        <field name="lastname" type="string" column="lastname"/>
+        <field name="firstname" type="string" column="firstname"/>
+        <field name="email" type="string" column="email"/>
+        <field name="password" type="string" column="password"/>
+        <field name="status" type="string" column="status"/>
+    </entity>
+</doctrine-mapping>
