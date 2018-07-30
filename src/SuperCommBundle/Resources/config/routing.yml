@@ -1,5 +1,5 @@
 super_comm_homepage:
-    path:     /bienvenue
+    path:     /
     defaults: { _controller: SuperCommBundle:Default:index }
 
 super_comm_conseilMinute:
@@ -14,9 +14,17 @@ super_comm_experts:
     path:     /nos-experts
     defaults: { _controller: SuperCommBundle:Default:experts }
 
+super_comm_blog:
+    path:     /vos-outils-web-marketing
+    defaults: { _controller: SuperCommBundle:Default:blog }
+
 super_comm_ressources:
-    path:     /vos-ressources
+    path:     /vos-outils-web-marketing/{categorie}
     defaults: { _controller: SuperCommBundle:Default:ressources }
+
+super_comm_ressource_detail:
+    path:     /vos-outils-web-marketing/{categorie}/{article}
+    defaults: { _controller: SuperCommBundle:Default:ressourceDetail }
 
 super_comm_inscription:
     path:     /inscription
