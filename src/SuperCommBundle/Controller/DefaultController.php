@@ -30,12 +30,16 @@ class DefaultController extends Controller
     {
         return $this->render('@SuperComm/Default/ressource_detail.html.twig');
     }
+
     public function ressourcesAction($categorie)
     {
         return $this->render('@SuperComm/Default/ressources.html.twig');
     }
+
     public function blogAction()
     {
+        $this->denyAccessUnlessGranted("ROLE_USER");
+
         return $this->render('@SuperComm/Default/blog.html.twig');
     }
 
