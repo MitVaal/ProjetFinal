@@ -38,7 +38,7 @@ class DefaultController extends Controller
 
     public function blogAction()
     {
-        $this->denyAccessUnlessGranted("ROLE_USER");
+        $this->denyAccessUnlessGranted("ROLE_ADMIN");
 
         return $this->render('@SuperComm/Default/blog.html.twig');
     }
