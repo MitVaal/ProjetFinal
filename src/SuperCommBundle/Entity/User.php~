@@ -2,15 +2,17 @@
 
 namespace SuperCommBundle\Entity;
 
+use FOS\UserBundle\Model\User as BaseUser;
+
 /**
  * User
  */
-class User
+class User extends BaseUser
 {
     /**
      * @var integer
      */
-    private $id;
+    protected $id;
 
 
     /**
@@ -22,5 +24,9 @@ class User
     {
         return $this->id;
     }
-}
 
+    public function __construct()
+    {
+        parent::__construct();
+    }
+}
