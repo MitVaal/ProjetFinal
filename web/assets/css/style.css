@@ -1,3 +1,81 @@
+@charset "UTF-8";
+.AnteMenu {
+  background-color: #00a8b2;
+  padding: 10px;
+  text-align: right; }
 
+.boutonAnteMenu {
+  padding: 10px;
+  color: white;
+  font-size: 0.8em; }
+
+.boutonMenu {
+  background-color: #00a8b2;
+  border-radius: 5px;
+  font-size: 0.7em;
+  color: white !important; }
+
+.iconHome {
+  color: #00a8b2; }
+
+.ongletMenu {
+  color: #00a8b2 !important;
+  font-size: 0.8em; }
+
+.footer {
+  background-color: #00a8b2;
+  color: white;
+  text-align: center; }
+
+.bgImage {
+  background-image: url("../images/Bg_homePage.jpg");
+  background-size: cover; }
+
+.vue {
+  height: 70vh; }
+
+.accrocheHome {
+  font-size: 1.5em;
+  margin: 20px;
+  color: white;
+  text-align: center; }
+
+.cta {
+  background-color: #00a8b2;
+  padding: 10px 30px;
+  font-size: 20px;
+  color: white;
+  border-radius: 10px;
+  width: 240px;
+  text-decoration-line: none !important; }
+
+.bandeauHome {
+  background-color: white;
+  font-size: medium;
+  color: #00a8b2;
+  text-align: center; }
+
+.bandeauPromo {
+  background-color: #00a8b2;
+  width: 100%;
+  color: white;
+  font-size: 1.5em;
+  text-align: center; }
+
+.boxService {
+  border-color: #00a8b2;
+  border-style: solid;
+  border-radius: 5px;
+  color: #00a8b2; }
+
+h1::before {
+  content: 'Vous avez besoin d\'être visible sur le Web? Sans savoir par où commencer ?'; }
+
+@media (max-width: 768px) {
+  h1::before {
+    content: 'Vous avez besoin d\'être visible sur le Web?'; }
+
+  .col-lg-4 {
+    padding: 10px; } }
 
 /*# sourceMappingURL=style.css.map */

@@ -29,3 +29,7 @@ super_comm_ressource_detail:
 super_comm_inscription:
     path:     /inscription
     defaults: { _controller: SuperCommBundle:Default:inscription }
+
+super_comm_mentions_legales:
+    path:     /mentions-legales
+    defaults: { _controller: SuperCommBundle:Default:mentionsLegales }

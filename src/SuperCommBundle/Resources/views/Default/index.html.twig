@@ -1,1 +1,72 @@
-Hello World!
+{% extends '@SuperComm/Default/base.html.twig' %}
+
+  {% block title %}<title>Bienvenue</title>{% endblock %}
+
+
+{% block content %}
+
+
+    <div class="container-fluid bgImage vue">
+
+        <div class="container vue d-flex flex-column align-items-center justify-content-center">
+            <h1 class="accrocheHome"></h1>
+            <a class="cta" href="{{ path('super_comm_conseilMinute') }}">Demandez conseil !</a>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="container bandeauHome p-5 d-flex flex-row">
+            <div class="row">
+                <div class="col-lg-4 p-md-3">
+                    <div class="row">
+                        <div class="col-lg-3"><i class="fas fa-stopwatch fa-3x"></i></div>
+                        <div class="col-lg-9">1. Répondez au questionnaire en moins de 3 minutes</div>
+                    </div>
+                </div>
+                <div class="col-lg-4 p-md-3">
+                    <div class="row">
+                        <div class="col-lg-3"><i class="far fa-address-card fa-3x"></i></div>
+                        <div class="col-lg-9">2. Découvrez l'expert qui répondra à vos problématiques</div>
+                    </div>
+                </div>
+                <div class="col-lg-4 p-md-3">
+                    <div class="row">
+                        <div class="col-lg-3"><i class="far fa-calendar-alt fa-3x"></i></div>
+                        <div class="col-lg-9">3. Obtenez un rendez-vous avec votre expert dans la semaine</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid bandeauPromo p-4">
+
+        <div class="container d-flex flex-row align-items-center justify-content-center">
+            <span>Offre spécial : Profitez de l'été pour penser à votre Personal Branding !</span>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="container p-4">
+            <div class="row">
+                <div class="col-lg-4 boxService">
+                    <p>Article 1</p>
+
+
+                </div>
+                <div class="col-lg-4 boxService">
+                    <p>Article 2</p>
+
+
+                </div>
+                <div class="col-lg-4 boxService">
+                    <p>Article 3</p>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+{% endblock %}

@@ -47,4 +47,9 @@ class DefaultController extends Controller
     {
         return $this->render('@SuperComm/Default/form_inscription.html.twig');
     }
+
+    public function mentionsLegalesAction()
+    {
+        return $this->render('@SuperComm/Default/mentions_legales.html.twig');
+    }
 }
