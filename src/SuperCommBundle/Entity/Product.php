@@ -27,6 +27,11 @@ class Product
      */
     private $id;
 
+    public function __toString()
+    {
+        return $this->title;
+    }
+
 
     /**
      * Set title
@@ -109,5 +114,33 @@ class Product
     {
         return $this->id;
     }
-}
+    /**
+     * @var \SuperCommBundle\Entity\User
+     */
+    private $user;
 
+
+    /**
+     * Set user
+     *
+     * @param \SuperCommBundle\Entity\User $user
+     *
+     * @return Product
+     */
+    public function setUser(\SuperCommBundle\Entity\User $user = null)
+    {
+        $this->user = $user;
+
+        return $this;
+    }
+
+    /**
+     * Get user
+     *
+     * @return \SuperCommBundle\Entity\User
+     */
+    public function getUser()
+    {
+        return $this->user;
+    }
+}

@@ -29,4 +29,43 @@ class User extends BaseUser
     {
         parent::__construct();
     }
+    /**
+     * @var \Doctrine\Common\Collections\Collection
+     */
+    private $article;
+
+
+    /**
+     * Add article
+     *
+     * @param \SuperCommBundle\Entity\Article $article
+     *
+     * @return User
+     */
+    public function addArticle(\SuperCommBundle\Entity\Article $article)
+    {
+        $this->article[] = $article;
+
+        return $this;
+    }
+
+    /**
+     * Remove article
+     *
+     * @param \SuperCommBundle\Entity\Article $article
+     */
+    public function removeArticle(\SuperCommBundle\Entity\Article $article)
+    {
+        $this->article->removeElement($article);
+    }
+
+    /**
+     * Get article
+     *
+     * @return \Doctrine\Common\Collections\Collection
+     */
+    public function getArticle()
+    {
+        return $this->article;
+    }
 }

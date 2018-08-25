@@ -43,6 +43,12 @@ class Prospect
     private $id;
 
 
+    public function __toString()
+    {
+        return $this->lastname;
+    }
+
+
     /**
      * Set civility
      *
@@ -195,5 +201,51 @@ class Prospect
     public function getId()
     {
         return $this->id;
+    }
+    /**
+     * @var \Doctrine\Common\Collections\Collection
+     */
+    private $upload;
+
+    /**
+     * Constructor
+     */
+    public function __construct()
+    {
+        $this->upload = new \Doctrine\Common\Collections\ArrayCollection();
+    }
+
+    /**
+     * Add upload
+     *
+     * @param \SuperCommBundle\Entity\Upload $upload
+     *
+     * @return Prospect
+     */
+    public function addUpload(\SuperCommBundle\Entity\Upload $upload)
+    {
+        $this->upload[] = $upload;
+
+        return $this;
+    }
+
+    /**
+     * Remove upload
+     *
+     * @param \SuperCommBundle\Entity\Upload $upload
+     */
+    public function removeUpload(\SuperCommBundle\Entity\Upload $upload)
+    {
+        $this->upload->removeElement($upload);
+    }
+
+    /**
+     * Get upload
+     *
+     * @return \Doctrine\Common\Collections\Collection
+     */
+    public function getUpload()
+    {
+        return $this->upload;
     }
 }

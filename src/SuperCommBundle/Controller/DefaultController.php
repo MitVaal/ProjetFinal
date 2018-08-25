@@ -2,6 +2,8 @@
 
 namespace SuperCommBundle\Controller;
 
+use SuperCommBundle\Entity\Article;
+use SuperCommBundle\Entity\Product;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 
 class DefaultController extends Controller
@@ -18,7 +20,12 @@ class DefaultController extends Controller
 
     public function offresAction()
     {
-        return $this->render('@SuperComm/Default/offres.html.twig');
+        $productRepository = $this->getDoctrine()->getRepository(Product::class);
+        $products = $productRepository->findAll();
+
+        return $this->render('@SuperComm/Default/offres.html.twig', array(
+            'products' => $products
+        ));
     }
 
     public function expertsAction()
@@ -40,7 +47,12 @@ class DefaultController extends Controller
     {
 //        $this->denyAccessUnlessGranted("ROLE_ADMIN");
 
-        return $this->render('@SuperComm/Default/blog.html.twig');
+        $articleRepository = $this->getDoctrine()->getRepository(Article::class);
+        $articles = $articleRepository->findAll();
+
+        return $this->render('@SuperComm/Default/blog.html.twig', array(
+            'articles' => $articles
+        ));
     }
 
     public function inscriptionAction()

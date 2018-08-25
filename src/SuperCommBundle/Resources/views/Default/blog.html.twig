@@ -1,2 +1,19 @@
-Hello le blog!
+{% extends '@SuperComm/Default/base.html.twig' %}
 
+    {% block title %}<title>Vos Ressources</title>{% endblock %}
+
+
+{% block content %}
+
+    {% for article in articles %}
+
+        <div>
+            <p>{{ article.title }}</p>
+            <p>{{ article.author }}</p>
+            <img src="{{ article.image }}">
+            <p>{{ article.content|raw }}</p>
+        </div>
+
+    {% endfor %}
+
+{% endblock %}

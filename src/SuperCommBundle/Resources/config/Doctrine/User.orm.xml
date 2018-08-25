@@ -8,5 +8,15 @@
         <id name="id" type="integer" column="id">
             <generator strategy="AUTO"/>
         </id>
+        <one-to-many
+                field="article"
+                target-entity="SuperCommBundle\Entity\Article"
+                mapped-by="user">
+        </one-to-many>
+        <one-to-many
+                field="product"
+                target-entity="SuperCommBundle\Entity\Product"
+                mapped-by="user">
+        </one-to-many>
     </entity>
 </doctrine-mapping>

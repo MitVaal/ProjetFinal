@@ -10,8 +10,18 @@
         </id>
         <field name="title" type="string" column="title"/>
         <field name="author" type="string" column="author"/>
-        <field name="dateOnPublished" type="datetime" column="date"/>
+        <field name="dateOnPublished" type="date" column="date"/>
         <field name="image" type="string" column="image"/>
         <field name="content" type="text" column="content"/>
+        <many-to-one
+                field="user"
+                target-entity="SuperCommBundle\Entity\User"
+                inversed-by="article">
+        </many-to-one>
+        <many-to-one
+                field="category"
+                target-entity="SuperCommBundle\Entity\Category"
+                inversed-by="article">
+        </many-to-one>
     </entity>
 </doctrine-mapping>

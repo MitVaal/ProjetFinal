@@ -81,7 +81,10 @@ easy_admin:
     site_name: 'Admin SuperComm'
     design:
         brand_color: '#00a8b2'
+        assets:
+            favicon: 'assets/images/favicons/favicon.png'
     list:
+        actions: ['new', 'show']
         max_results: 25
     entities:
         Article:
@@ -89,24 +92,105 @@ easy_admin:
             label: 'Articles'
             list:
                 title: 'Articles du blog'
-                fields: ['id', { property: 'title', label: 'Titre' }, { property: 'author', label: 'Auteur' }, { property: 'content', label: 'Contenu' }, 'Image']
+                fields:
+                    - id
+                    - { property: 'title', label: 'Titre' }
+                    - { property: 'author', label: 'Auteur' }
+                    - { property: 'dateOnPublished', label: 'Date' }
+                    - { property: 'image', label: 'Image' }
+                    - { property: 'content', label: 'Contenu' }
+                    - { property: 'category', label: 'Catégorie(s)' }
+                    - { property: 'user', label: 'Expert'}
+            form:
+               fields:
+                    - { property: 'title', label: 'Titre' }
+                    - { property: 'author', label: 'Auteur' }
+                    - { property: 'dateOnPublished', label: 'Date' }
+                    - { property: 'image', label: 'Image' }
+                    - { property: 'content', label: 'Contenu', type: 'ckeditor' }
+                    - { property: 'category', label: 'Catégorie(s)', type_options: { expanded: true, multiple: true } }
+                    - { property: 'user', label: 'Expert'}
         Prospect:
             class: SuperCommBundle\Entity\Prospect
-            label: 'Inscrits'
+            label: 'Prospects'
             list:
                 title: 'Personnes ayant téléchargé du contenu sur le site'
+                fields:
+                    - id
+                    - { property: 'civility', label: 'Civilité' }
+                    - { property: 'lastname', label: 'Nom' }
+                    - { property: 'firstname', label: 'Prénom' }
+                    - { property: 'email', label: 'Email' }
+                    - { property: 'status', label: 'Vous êtes ?' }
+                    - { property: 'upload', label: 'Téléchargements' }
+            form:
+                fields:
+                - { property: 'civility', label: 'Civilité', type: 'choice', type_options: { multiple: false, choices: { 'Mme': 'Mme', 'M.': 'M.' } } }
+                - { property: 'lastname', label: 'Nom' }
+                - { property: 'firstname', label: 'Prénom' }
+                - { property: 'email', label: 'Email', type: 'email' }
+                - { property: 'password', label: 'Mot de passe' }
+                - { property: 'status', label: 'Vous êtes ?', type: 'choice', type_options: { multiple: false, choices: { 'Une PME': 'Une PME', 'Une startup': 'Une startup', 'Une TPE': 'Une TPE', 'En libérale dans le médical': 'En libérale dans le médical', 'En libérale dans le juridique': 'En libérale dans le juridique', 'Un(e) confrère ou un(e) enseignant(e)': 'Un(e) confrère ou un(e) enseignant(e)', 'Un(e) étudiant(e)': 'Un(e) étudiant(e)', "En recherche d'emploi": "En recherche d'emploi" } } }
+                - { property: 'upload', label: 'Téléchargements' }
+
+
         User:
             class: SuperCommBundle\Entity\User
             label: 'Utilisateurs'
             list:
                 title: 'Utilisateurs et Administrateurs'
+
         Product:
             class: SuperCommBundle\Entity\Product
-            label: 'Services'
+            label: 'Produits'
             list:
-                title: 'Offres packagées'
+                title: 'Services proposés et/ou packagés'
+                fields:
+                    - id
+                    - { property: 'title', label: 'Titre' }
+                    - { property: 'image', label: 'Image' }
+                    - { property: 'content', label: 'Contenu' }
+                    - { property: 'user', label: 'SuperAdmin' }
+            form:
+                fields:
+                    - { property: 'title', label: 'Titre' }
+                    - { property: 'image', label: 'Image' }
+                    - { property: 'content', label: 'Contenu', type: 'ckeditor' }
+                    - { property: 'user', label: 'SuperAdmin' }
         Upload:
             class: SuperCommBundle\Entity\Upload
-            label: 'Contenus à télécharger'
+            label: 'Téléchargements'
             list:
                 title: 'Médias téléchargeables par les inscrits'
+                fields:
+                    - id
+                    - { property: 'title', label: 'Titre' }
+                    - { property: 'content', label: 'Contenu' }
+                    - { property: 'media', label: 'Média' }
+            form:
+                fields:
+                    - { property: 'title', label: 'Titre' }
+                    - { property: 'content', label: 'Contenu', type: 'ckeditor' }
+                    - { property: 'media', label: 'Média' }
+        Category:
+            class: SuperCommBundle\Entity\Category
+            label: 'Catégories des articles'
+            list:
+                title: 'Catégories dans lesquelles classer les articles'
+                fields:
+                    - id
+                    - { property: 'label', label: 'Intitulé' }
+            form:
+                fields:
+                    - { property: 'label', label: 'Intitulé' }
+                    - article
+
+
+ivory_ck_editor:
+    default_config: 'my_custom_config'
+    configs:
+        my_custom_config:
+            uiColor: '#00a8b2'
+            toolbar: full
+            height: '500px'
+            language: fr

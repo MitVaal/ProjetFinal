@@ -2,24 +2,34 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2f1dab72-c88c-47c8-b5c7-0357d1261660" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/SuperCommBundle/Resources/views/Default/base.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/SuperCommBundle/Resources/views/Default/mentions_legales.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/assets/images/Bg_homePage.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/assets/scss/_contentHome.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/assets/scss/_footer.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/assets/scss/_header.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/SuperCommBundle/Resources/config/Doctrine/Category.orm.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/assets/images/favicons/favicon-32.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/assets/images/favicons/favicon-64.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/assets/images/favicons/favicon-96.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/assets/images/favicons/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/assets/images/favicons/favicon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/ProjetFinal.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ProjetFinal.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/AppKernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/AppKernel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/config/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/config.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/config/security.yml" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/security.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/SuperCommBundle/Controller/DefaultController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/SuperCommBundle/Controller/DefaultController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SuperCommBundle/Resources/config/routing.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/SuperCommBundle/Resources/config/routing.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SuperCommBundle/Resources/views/Default/conseil_minute.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/SuperCommBundle/Resources/views/Default/conseil_minute.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SuperCommBundle/Resources/views/Default/experts.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/SuperCommBundle/Resources/views/Default/experts.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SuperCommBundle/Resources/views/Default/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/SuperCommBundle/Resources/views/Default/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SuperCommBundle/Entity/Article.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/SuperCommBundle/Entity/Article.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SuperCommBundle/Entity/Product.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/SuperCommBundle/Entity/Product.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SuperCommBundle/Entity/Prospect.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/SuperCommBundle/Entity/Prospect.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SuperCommBundle/Entity/Upload.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/SuperCommBundle/Entity/Upload.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SuperCommBundle/Entity/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/SuperCommBundle/Entity/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SuperCommBundle/Resources/config/Doctrine/Article.orm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/SuperCommBundle/Resources/config/Doctrine/Article.orm.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SuperCommBundle/Resources/config/Doctrine/Product.orm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/SuperCommBundle/Resources/config/Doctrine/Product.orm.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SuperCommBundle/Resources/config/Doctrine/Prospect.orm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/SuperCommBundle/Resources/config/Doctrine/Prospect.orm.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SuperCommBundle/Resources/config/Doctrine/Upload.orm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/SuperCommBundle/Resources/config/Doctrine/Upload.orm.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SuperCommBundle/Resources/config/Doctrine/User.orm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/SuperCommBundle/Resources/config/Doctrine/User.orm.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SuperCommBundle/Resources/views/Default/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/SuperCommBundle/Resources/views/Default/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SuperCommBundle/Resources/views/Default/blog.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/SuperCommBundle/Resources/views/Default/blog.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/SuperCommBundle/Resources/views/Default/offres.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/SuperCommBundle/Resources/views/Default/offres.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/assets/css/style.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/assets/scss/_vars.scss" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/scss/_vars.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/assets/scss/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/scss/style.scss" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -31,37 +41,57 @@
   <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
   <component name="FavoritesManager">
     <favorites_list name="ProjetFinal" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="routing.yml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/SuperCommBundle/Resources/config/routing.yml">
+      <file leaf-file-name="config.yml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/config/config.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" selection-start-line="4" selection-end-line="4" selection-end-column="24" />
+            <state relative-caret-position="168">
+              <caret line="113" column="50" lean-forward="true" selection-start-line="113" selection-start-column="50" selection-end-line="113" selection-end-column="50" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="base.html.twig" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Category.orm.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/SuperCommBundle/Resources/config/Doctrine/Category.orm.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="17" column="19" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="base.html.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/SuperCommBundle/Resources/views/Default/base.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1065">
-              <caret line="71" column="50" selection-start-line="71" selection-start-column="50" selection-end-line="71" selection-end-column="50" />
+            <state relative-caret-position="300">
+              <caret line="20" column="6" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="6" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/SuperCommBundle/Resources/views/Default/index.html.twig">
+      <file leaf-file-name="conseil_minute.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/SuperCommBundle/Resources/views/Default/conseil_minute.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
-              <caret line="14" column="10" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
-              <folding>
-                <element signature="e#12#45#0#Twig" expanded="true" />
-              </folding>
+            <state relative-caret-position="45">
+              <caret line="3" selection-start-line="3" selection-end-line="3" />
             </state>
           </provider>
         </entry>
@@ -95,15 +125,10 @@
       <list>
         <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/app/config/parameters.yml" />
-        <option value="$PROJECT_DIR$/src/SuperCommBundle/Resources/config/Doctrine/Prospect.orm.xml" />
         <option value="$PROJECT_DIR$/src/SuperCommBundle/Resources/config/Doctrine/Admin.orm.xml" />
-        <option value="$PROJECT_DIR$/src/SuperCommBundle/Resources/config/Doctrine/Article.orm.xml" />
         <option value="$PROJECT_DIR$/src/SuperCommBundle/Resources/config/Doctrine/Page.orm.xml" />
         <option value="$PROJECT_DIR$/src/SuperCommBundle/Resources/views/Default/ressources.html.twig" />
         <option value="$PROJECT_DIR$/src/SuperCommBundle/Resources/views/Default/form_inscription.html.twig" />
-        <option value="$PROJECT_DIR$/src/SuperCommBundle/Resources/config/Doctrine/User.orm.xml" />
-        <option value="$PROJECT_DIR$/src/SuperCommBundle/Entity/User.php" />
-        <option value="$PROJECT_DIR$/src/SuperCommBundle/Resources/views/Default/blog.html.twig" />
         <option value="$PROJECT_DIR$/src/SuperCommBundle/Resources/views/Default/ressource_detail.html.twig" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Security/login_content.html.twig" />
@@ -111,27 +136,37 @@
         <option value="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Profile/edit_content.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Registration/register_content.html.twig" />
         <option value="$PROJECT_DIR$/web/assets/css/main.css" />
-        <option value="$PROJECT_DIR$/app/AppKernel.php" />
         <option value="$PROJECT_DIR$/app/config/routing.yml" />
-        <option value="$PROJECT_DIR$/src/SuperCommBundle/Resources/config/Doctrine/Product.orm.xml" />
-        <option value="$PROJECT_DIR$/src/SuperCommBundle/Resources/config/Doctrine/Upload.orm.xml" />
-        <option value="$PROJECT_DIR$/src/SuperCommBundle/Entity/Article.php" />
-        <option value="$PROJECT_DIR$/app/config/config.yml" />
         <option value="$PROJECT_DIR$/web/assets/css/style.css" />
         <option value="$PROJECT_DIR$/web/assets/scss/_vars.scss" />
-        <option value="$PROJECT_DIR$/app/config/security.yml" />
         <option value="$PROJECT_DIR$/web/assets/scss/_header.scss" />
         <option value="$PROJECT_DIR$/web/assets/scss/_footer.scss" />
         <option value="$PROJECT_DIR$/src/SuperCommBundle/Resources/views/Default/conseil_minute.html.twig" />
-        <option value="$PROJECT_DIR$/src/SuperCommBundle/Resources/views/Default/experts.html.twig" />
-        <option value="$PROJECT_DIR$/src/SuperCommBundle/Resources/views/Default/offres.html.twig" />
         <option value="$PROJECT_DIR$/web/assets/scss/style.scss" />
         <option value="$PROJECT_DIR$/web/assets/scss/_contentHome.scss" />
         <option value="$PROJECT_DIR$/src/SuperCommBundle/Resources/config/routing.yml" />
-        <option value="$PROJECT_DIR$/src/SuperCommBundle/Controller/DefaultController.php" />
         <option value="$PROJECT_DIR$/src/SuperCommBundle/Resources/views/Default/mentions_legales.html.twig" />
         <option value="$PROJECT_DIR$/src/SuperCommBundle/Resources/views/Default/index.html.twig" />
+        <option value="$PROJECT_DIR$/src/SuperCommBundle/Entity/User.php" />
+        <option value="$PROJECT_DIR$/src/SuperCommBundle/Entity/Prospect.php" />
+        <option value="$PROJECT_DIR$/src/SuperCommBundle/Resources/config/Doctrine/Prospect.orm.xml" />
+        <option value="$PROJECT_DIR$/src/SuperCommBundle/Resources/config/Doctrine/Upload.orm.xml" />
+        <option value="$PROJECT_DIR$/app/AppKernel.php" />
+        <option value="$PROJECT_DIR$/src/SuperCommBundle/Resources/views/Default/experts.html.twig" />
+        <option value="$PROJECT_DIR$/src/SuperCommBundle/Resources/config/Doctrine/Category.orm.xml" />
+        <option value="$PROJECT_DIR$/src/SuperCommBundle/Resources/views/Default/blog.html.twig" />
+        <option value="$PROJECT_DIR$/src/SuperCommBundle/Entity/Article.php" />
+        <option value="$PROJECT_DIR$/src/SuperCommBundle/Entity/Category.php" />
+        <option value="$PROJECT_DIR$/src/SuperCommBundle/Entity/Upload.php" />
+        <option value="$PROJECT_DIR$/src/SuperCommBundle/Resources/config/Doctrine/Product.orm.xml" />
+        <option value="$PROJECT_DIR$/src/SuperCommBundle/Resources/config/Doctrine/User.orm.xml" />
+        <option value="$PROJECT_DIR$/src/SuperCommBundle/Entity/Product.php" />
+        <option value="$PROJECT_DIR$/src/SuperCommBundle/Resources/views/Default/offres.html.twig" />
+        <option value="$PROJECT_DIR$/src/SuperCommBundle/Controller/DefaultController.php" />
         <option value="$PROJECT_DIR$/src/SuperCommBundle/Resources/views/Default/base.html.twig" />
+        <option value="$PROJECT_DIR$/app/config/security.yml" />
+        <option value="$PROJECT_DIR$/src/SuperCommBundle/Resources/config/Doctrine/Article.orm.xml" />
+        <option value="$PROJECT_DIR$/app/config/config.yml" />
       </list>
     </option>
   </component>
@@ -142,7 +177,9 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="NodePackageJsonFileManager">
-    <packageJsonPaths />
+    <packageJsonPaths>
+      <path value="$PROJECT_DIR$/web/bundles/ivoryckeditor/package.json" />
+    </packageJsonPaths>
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -189,10 +226,11 @@
       <path value="$PROJECT_DIR$/vendor/easycorp/easyadmin-bundle" />
       <path value="$PROJECT_DIR$/vendor/twig/extensions" />
       <path value="$PROJECT_DIR$/vendor/pagerfanta/pagerfanta" />
+      <path value="$PROJECT_DIR$/vendor/egeloen/ckeditor-bundle" />
+      <path value="$PROJECT_DIR$/vendor/egeloen/json-builder" />
     </include_path>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="19" />
     <option name="y" value="23" />
     <option name="width" value="1440" />
     <option name="height" value="877" />
@@ -287,31 +325,6 @@
               <item name="views" type="462c0819:PsiDirectoryNode" />
               <item name="Default" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="ProjetFinal" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ProjetFinal" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ProjetFinal" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ProjetFinal" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ProjetFinal" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ProjetFinal" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ProjetFinal" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ProjetFinal" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="scss" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -330,13 +343,14 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/web/assets/images/favicons" />
+      <recent name="$PROJECT_DIR$/src/SuperCommBundle/Resources/config/Doctrine" />
       <recent name="$PROJECT_DIR$/src/SuperCommBundle/Resources/views/Default" />
       <recent name="$PROJECT_DIR$/web/assets/images" />
-      <recent name="$PROJECT_DIR$/src/SuperCommBundle/Resources/config/Doctrine" />
       <recent name="$PROJECT_DIR$/src/assets/images" />
-      <recent name="$PROJECT_DIR$/app/Resources/FOSUserBundle/views" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/web/assets/images" />
       <recent name="$PROJECT_DIR$/web/assets/scss" />
       <recent name="$PROJECT_DIR$/web/assets" />
     </key>
@@ -370,7 +384,7 @@
       <workItem from="1533125084851" duration="11573000" />
       <workItem from="1533211125559" duration="305000" />
       <workItem from="1533228063532" duration="1604000" />
-      <workItem from="1534336215010" duration="21071000" />
+      <workItem from="1534336215010" duration="50108000" />
     </task>
     <task id="LOCAL-00001" summary="remove .idea from git">
       <created>1532959728021</created>
@@ -390,22 +404,23 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="55300000" />
+    <option name="totallyTimeSpent" value="84337000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="19" y="23" width="1440" height="877" extended-state="0" />
+    <frame x="0" y="23" width="1440" height="877" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.8364888" visible="true" weight="0.27521613" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.29776022" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.8364888" visible="true" weight="0.22190201" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="right" id="Database" order="3" weight="0.3299712" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32938075" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.23056653" />
       <window_info id="Favorites" order="2" sideWeight="0.16351119" side_tool="true" weight="0.26656848" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -415,7 +430,6 @@
       <window_info anchor="bottom" id="Command Line Tools Console" order="8" weight="0.32962447" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32962447" />
     </layout>
     <layout-to-restore>
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -453,56 +467,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="remove .idea from git" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/config/security.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="37" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/routing.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SuperCommBundle/Resources/config/routing.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="20" lean-forward="true" selection-start-column="20" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SuperCommBundle/Entity/User.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="5" lean-forward="true" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/composer.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="10" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SuperCommBundle/Resources/config/Doctrine/Article.orm.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="16" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SuperCommBundle/Resources/views/Default/form_inscription.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SuperCommBundle/Resources/config/Doctrine/Admin.orm.xml" />
     <entry file="file://$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/EventListener/AuthenticationListener.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -529,20 +493,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SuperCommBundle/Resources/config/Doctrine/Prospect.orm.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="19" lean-forward="true" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SuperCommBundle/Resources/config/Doctrine/User.orm.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="19" lean-forward="true" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
         </state>
       </provider>
     </entry>
@@ -584,72 +534,10 @@
     <entry file="file://$PROJECT_DIR$/app/config/parameters.yml.dist">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/AppKernel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SuperCommBundle/Resources/config/Doctrine/Upload.orm.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="19" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SuperCommBundle/Resources/config/Doctrine/Product.orm.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="19" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SuperCommBundle/Entity/User.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="367">
-          <caret line="27" column="33" selection-start-line="27" selection-start-column="33" selection-end-line="27" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SuperCommBundle/Entity/Upload.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SuperCommBundle/Entity/Product.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/parameters.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SuperCommBundle/Resources/views/Default/blog.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="6" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/SuperCommBundle/Resources/views/Default/ressource_detail.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/routing.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="20" lean-forward="true" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SuperCommBundle/Entity/Article.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="268">
-          <caret line="41" column="16" selection-start-line="41" selection-start-column="16" selection-end-line="41" selection-end-column="16" />
         </state>
       </provider>
     </entry>
@@ -671,20 +559,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/security.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="32" column="46" lean-forward="true" selection-start-line="32" selection-start-column="46" selection-end-line="32" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/assets/scss/_vars.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="11" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/assets/scss/_header.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
@@ -696,50 +570,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" column="1" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SuperCommBundle/Resources/views/Default/conseil_minute.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" selection-start-line="5" selection-end-line="10" selection-end-column="13" />
-          <folding>
-            <element signature="e#39#72#0#Twig" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SuperCommBundle/Resources/views/Default/offres.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="14" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
-          <folding>
-            <element signature="e#12#45#0#Twig" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/config.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="76" column="46" selection-start-line="76" selection-start-column="46" selection-end-line="76" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SuperCommBundle/Resources/views/Default/experts.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="2" selection-start-line="2" selection-start-column="2" selection-end-line="9" selection-end-column="14" />
-          <folding>
-            <element signature="e#31#64#0#Twig" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/assets/scss/style.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="22" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
         </state>
       </provider>
     </entry>
@@ -760,31 +590,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/SuperCommBundle/Controller/DefaultController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="42" column="30" selection-start-line="42" selection-start-column="30" selection-end-line="42" selection-end-column="30" />
-          <folding>
-            <element signature="e#219#255#1#PHP" expanded="true" />
-            <element signature="e#342#387#1#PHP" expanded="true" />
-            <element signature="e#467#504#1#PHP" expanded="true" />
-            <element signature="e#585#623#1#PHP" expanded="true" />
-            <element signature="e#731#778#1#PHP" expanded="true" />
-            <element signature="e#872#913#1#PHP" expanded="true" />
-            <element signature="e#1048#1083#1#PHP" expanded="true" />
-            <element signature="e#1168#1215#1#PHP" expanded="true" />
-            <element signature="e#1304#1351#1#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SuperCommBundle/Resources/config/routing.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" selection-start-line="4" selection-end-line="4" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/SuperCommBundle/Resources/views/Default/index.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="208">
@@ -795,10 +600,206 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/SuperCommBundle/Entity/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SuperCommBundle/Resources/config/routing.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="20" selection-start-column="20" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/routing_dev.yml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/parameters.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SuperCommBundle/Entity/Prospect.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="212">
+          <caret line="49" selection-start-line="49" selection-end-line="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/AppKernel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="20" column="47" selection-start-line="20" selection-start-column="47" selection-end-line="20" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SuperCommBundle/Resources/views/Default/experts.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="14" lean-forward="true" selection-end-line="9" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/assets/scss/style.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="22" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/assets/scss/_vars.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="21" selection-start-column="15" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/routing.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="20" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SuperCommBundle/Repository/Article.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SuperCommBundle/Repository/Product.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SuperCommBundle/Entity/Category.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="249">
+          <caret line="25" column="5" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SuperCommBundle/Entity/Upload.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="263">
+          <caret line="36" column="16" selection-start-line="36" selection-start-column="16" selection-end-line="36" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SuperCommBundle/Entity/Article.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="313">
+          <caret line="40" column="4" selection-start-line="40" selection-start-column="4" selection-end-line="43" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SuperCommBundle/Entity/Product.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="32" column="5" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SuperCommBundle/Resources/views/Default/blog.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="4" lean-forward="true" selection-start-line="7" selection-start-column="4" selection-end-line="16" selection-end-column="16" />
+          <folding>
+            <element signature="e#12#45#0#Twig" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SuperCommBundle/Resources/views/Default/offres.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+          <folding>
+            <element signature="e#12#45#0#Twig" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/assets/images/Logo.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SuperCommBundle/Resources/config/Doctrine/Prospect.orm.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="37" selection-start-line="19" selection-start-column="37" selection-end-line="19" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SuperCommBundle/Controller/DefaultController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="28" column="5" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
+          <folding>
+            <element signature="e#46#81#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/security.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="469">
+          <caret line="32" column="52" selection-start-line="32" selection-start-column="52" selection-end-line="32" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SuperCommBundle/Resources/config/Doctrine/Upload.orm.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="19" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SuperCommBundle/Resources/config/Doctrine/User.orm.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="19" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SuperCommBundle/Resources/config/Doctrine/Article.orm.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SuperCommBundle/Resources/config/Doctrine/Product.orm.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="19" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/SuperCommBundle/Resources/views/Default/base.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1065">
-          <caret line="71" column="50" selection-start-line="71" selection-start-column="50" selection-end-line="71" selection-end-column="50" />
+        <state relative-caret-position="300">
+          <caret line="20" column="6" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SuperCommBundle/Resources/views/Default/conseil_minute.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SuperCommBundle/Resources/config/Doctrine/Category.orm.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="19" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="113" column="50" lean-forward="true" selection-start-line="113" selection-start-column="50" selection-end-line="113" selection-end-column="50" />
         </state>
       </provider>
     </entry>

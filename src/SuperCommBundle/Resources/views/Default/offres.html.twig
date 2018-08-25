@@ -5,6 +5,14 @@
 
 {% block content %}
 
-    Hello les Services!
+    {% for product in products %}
+
+        <div>
+            <p>{{ product.title }}</p>
+            <img src="{{ product.image }}">
+            <p>{{ product.content|raw }}</p>
+        </div>
+
+    {% endfor %}
 
 {% endblock %}

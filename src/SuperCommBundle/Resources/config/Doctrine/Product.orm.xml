@@ -11,5 +11,10 @@
         <field name="title" type="string" column="title"/>
         <field name="image" type="string" column="image"/>
         <field name="content" type="text" column="content"/>
+        <many-to-one
+                field="user"
+                target-entity="SuperCommBundle\Entity\User"
+                inversed-by="product">
+        </many-to-one>
     </entity>
 </doctrine-mapping>
