@@ -112,39 +112,31 @@ easy_admin:
                     - { type: 'divider' }
                     - { property: 'category', label: 'Catégorie(s)' }
                     - { property: 'user', label: 'Expert'}
-        Prospect:
-            class: SuperCommBundle\Entity\Prospect
-            label: 'Prospects'
-            list:
-                title: 'Personnes ayant téléchargé du contenu sur le site'
-                fields:
-                    - id
-                    - { property: 'civility', label: 'Civilité' }
-                    - { property: 'lastname', label: 'Nom' }
-                    - { property: 'firstname', label: 'Prénom' }
-                    - { property: 'email', label: 'Email' }
-                    - { property: 'status', label: 'Vous êtes ?' }
-                    - { property: 'upload', label: 'Téléchargements' }
-            form:
-                fields:
-                - { type: 'group', css_class: 'col-sm-12', label: 'Contact', icon: 'user' }
-                - { property: 'civility', label: 'Civilité', type: 'choice', type_options: { multiple: false, choices: { 'Mme': 'Mme', 'M.': 'M.' } } }
-                - { property: 'lastname', label: 'Nom' }
-                - { property: 'firstname', label: 'Prénom' }
-                - { type: 'group', label: 'Email', icon: 'envelope', css_class: 'col-sm-12' }
-                - { property: 'email', label: 'Email', type: 'email' }
-                - { property: 'password', label: 'Mot de passe'}
-                - { type: 'group', css_class: 'col-sm-12', label: 'Profession', icon: 'id-card' }
-                - { property: 'status', label: 'Vous êtes ?', type: 'choice', type_options: { multiple: false, choices: { 'Une PME': 'Une PME', 'Une startup': 'Une startup', 'Une TPE': 'Une TPE', 'En libérale dans le médical': 'En libérale dans le médical', 'En libérale dans le juridique': 'En libérale dans le juridique', 'Un(e) confrère ou un(e) enseignant(e)': 'Un(e) confrère ou un(e) enseignant(e)', 'Un(e) étudiant(e)': 'Un(e) étudiant(e)', "En recherche d'emploi": "En recherche d'emploi" } } }
-                - { type: 'group', css_class: 'col-sm-12', label: 'Média(s) téléchargé(s)', icon: 'upload' }
-                - { property: 'upload', label: 'Téléchargement(s)', type: 'easyadmin_autocomplete' }
-
 
         User:
             class: SuperCommBundle\Entity\User
             label: 'Utilisateurs'
             list:
                 title: 'Utilisateurs et Administrateurs'
+                fields:
+                    - id
+                    - { property: 'username', label: 'Identifiant' }
+                    - { property: 'email', label: 'Email' }
+                    - { property: 'enabled', label: 'Autorisé' }
+                    - { property: 'lastLogin', label: 'Dernière connexion' }
+                    - { property: 'roles', label: "Types d'utilisateurs" }
+                    - { property: 'article', label: 'Article' }
+                    - { property: 'product', label: 'Produit' }
+            form:
+                fields:
+                    - id
+                    - { property: 'username', label: 'Identifiant' }
+                    - { property: 'email', label: 'Email' }
+                    - { property: 'enabled', label: 'Autorisé' }
+                    - { property: 'lastLogin', label: 'Dernière connexion' }
+                    - { property: 'roles', label: "Types d'utilisateurs" }
+                    - { property: 'article', label: 'Article' }
+                    - { property: 'product', label: 'Produit' }
 
         Product:
             class: SuperCommBundle\Entity\Product
@@ -164,21 +156,7 @@ easy_admin:
                     - { property: 'content', label: 'Contenu', type: 'ckeditor' }
                     - { type: 'divider' }
                     - { property: 'user', label: 'SuperAdmin' }
-        Upload:
-            class: SuperCommBundle\Entity\Upload
-            label: 'Téléchargements'
-            list:
-                title: 'Médias téléchargeables par les inscrits'
-                fields:
-                    - id
-                    - { property: 'title', label: 'Titre' }
-                    - { property: 'content', label: 'Contenu' }
-                    - { property: 'media', label: 'Média' }
-            form:
-                fields:
-                    - { property: 'title', label: 'Titre' }
-                    - { property: 'content', label: 'Contenu', type: 'ckeditor' }
-                    - { property: 'media', label: 'Média' }
+
         Category:
             class: SuperCommBundle\Entity\Category
             label: 'Catégories des articles'

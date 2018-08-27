@@ -21,11 +21,8 @@
 <body>
 
 <header>
-    <div class="AnteMenu">
-        <a class="boutonAnteMenu" href="#">CONNEXION</a>
-    </div>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand home" href="{{ path('super_comm_homepage') }}"><i class="fas fa-home iconHome"></i></a>
+        <a class="navbar-brand home" href="{{ path('super_comm_homepage') }}"><img class="logoMenu" src="{{ asset('assets/images/LogoSuperComm.png') }}"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -45,9 +42,15 @@
                 <li class="nav-item">
                     <a class="nav-link ongletMenu" href="{{ path('super_comm_blog') }}">VOS RESSOURCES</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link boutonMenu" href="{{ path('super_comm_inscription') }}">INSCRIVEZ-VOUS !</a>
-                </li>
+                {% if not app.user %}<li class="nav-item">
+                    <a class="nav-link boutonMenu" href="{{ path('fos_user_security_login') }}">CONNEXION</a>
+                    </li>{% endif %}
+                {% if app.user %}<li class="nav-item">
+                    <a class="nav-link boutonMenu" href="{{ path('fos_user_security_logout') }}">DECONNEXION</a>
+                    </li>{% endif %}
+                {% if is_granted('ROLE_ADMIN') %}<li class="nav-item">
+                    <a class="nav-link boutonMenu" href="{{ path('easyadmin') }}">ADMIN</a>
+                    </li>{% endif %}
             </ul>
         </div>
     </nav>

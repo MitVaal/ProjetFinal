@@ -1,5 +1,5 @@
-<link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
-<div class="loginFormBg">
+{% extends '@SuperComm/Default/base.html.twig' %}
+
 {% block content %}
 
     {% if app.request.hasPreviousSession %}
@@ -17,4 +17,4 @@
         {% endblock fos_user_content %}
     </div>
 {% endblock %}
-</div>
+
