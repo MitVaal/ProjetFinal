@@ -48,7 +48,6 @@ class Prospect
         return $this->lastname;
     }
 
-
     /**
      * Set civility
      *

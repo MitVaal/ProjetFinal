@@ -62,11 +62,13 @@
   font-size: 1.5em;
   text-align: center; }
 
-.boxService {
-  border-color: #00a8b2;
-  border-style: solid;
-  border-radius: 5px;
+.boxArticle {
+  text-align: center;
   color: #00a8b2; }
+
+.boxImg {
+  height: 200px;
+  width: 300px; }
 
 h1::before {
   content: 'Vous avez besoin d\'être visible sur le Web? Sans savoir par où commencer ?'; }

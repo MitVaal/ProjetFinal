@@ -28,7 +28,7 @@ super_comm_ressource_detail:
 
 super_comm_inscription:
     path:     /inscription
-    defaults: { _controller: SuperCommBundle:Default:inscription }
+    defaults: { _controller: SuperCommBundle:Default:inscriptionForm }
 
 super_comm_mentions_legales:
     path:     /mentions-legales

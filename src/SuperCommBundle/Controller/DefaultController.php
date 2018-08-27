@@ -2,15 +2,23 @@
 
 namespace SuperCommBundle\Controller;
 
+
 use SuperCommBundle\Entity\Article;
 use SuperCommBundle\Entity\Product;
+use SuperCommBundle\Entity\Prospect;
+use SuperCommBundle\Form\ProspectType;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+use Symfony\Component\HttpFoundation\Request;
 
 class DefaultController extends Controller
 {
     public function indexAction()
     {
-        return $this->render('@SuperComm/Default/index.html.twig');
+        $articleRepository = $this->getDoctrine()->getRepository(Article::class);
+        $articles = $articleRepository->findAll();
+        return $this->render('@SuperComm/Default/index.html.twig', array(
+            'articles' => $articles
+        ));
     }
 
     public function conseilMinuteAction()
@@ -55,9 +63,24 @@ class DefaultController extends Controller
         ));
     }
 
-    public function inscriptionAction()
+    public function inscriptionFormAction(Request $request)
     {
-        return $this->render('@SuperComm/Default/form_inscription.html.twig');
+        $prospect = new Prospect();
+        $form = $this->createForm(ProspectType::class, $prospect);
+        $formView = $form->createView();
+
+        $form->handleRequest($request);
+        if ($form->isSubmitted()&& $form->isValid()){
+            $prospect = $form->getData();
+
+            $entityManager = $this->getDoctrine()->getManager();
+            $entityManager->persist($prospect);
+            $entityManager->flush();
+        }
+
+        return $this->render('@SuperComm/Default/form_inscription.html.twig', array(
+            'formView' => $formView
+        ));
     }
 
     public function mentionsLegalesAction()

@@ -106,9 +106,11 @@ easy_admin:
                     - { property: 'title', label: 'Titre' }
                     - { property: 'author', label: 'Auteur' }
                     - { property: 'dateOnPublished', label: 'Date' }
+                    - { type: 'divider' }
                     - { property: 'image', label: 'Image' }
                     - { property: 'content', label: 'Contenu', type: 'ckeditor' }
-                    - { property: 'category', label: 'Catégorie(s)', type_options: { expanded: true, multiple: true } }
+                    - { type: 'divider' }
+                    - { property: 'category', label: 'Catégorie(s)' }
                     - { property: 'user', label: 'Expert'}
         Prospect:
             class: SuperCommBundle\Entity\Prospect
@@ -125,13 +127,17 @@ easy_admin:
                     - { property: 'upload', label: 'Téléchargements' }
             form:
                 fields:
+                - { type: 'group', css_class: 'col-sm-12', label: 'Contact', icon: 'user' }
                 - { property: 'civility', label: 'Civilité', type: 'choice', type_options: { multiple: false, choices: { 'Mme': 'Mme', 'M.': 'M.' } } }
                 - { property: 'lastname', label: 'Nom' }
                 - { property: 'firstname', label: 'Prénom' }
+                - { type: 'group', label: 'Email', icon: 'envelope', css_class: 'col-sm-12' }
                 - { property: 'email', label: 'Email', type: 'email' }
-                - { property: 'password', label: 'Mot de passe' }
+                - { property: 'password', label: 'Mot de passe'}
+                - { type: 'group', css_class: 'col-sm-12', label: 'Profession', icon: 'id-card' }
                 - { property: 'status', label: 'Vous êtes ?', type: 'choice', type_options: { multiple: false, choices: { 'Une PME': 'Une PME', 'Une startup': 'Une startup', 'Une TPE': 'Une TPE', 'En libérale dans le médical': 'En libérale dans le médical', 'En libérale dans le juridique': 'En libérale dans le juridique', 'Un(e) confrère ou un(e) enseignant(e)': 'Un(e) confrère ou un(e) enseignant(e)', 'Un(e) étudiant(e)': 'Un(e) étudiant(e)', "En recherche d'emploi": "En recherche d'emploi" } } }
-                - { property: 'upload', label: 'Téléchargements' }
+                - { type: 'group', css_class: 'col-sm-12', label: 'Média(s) téléchargé(s)', icon: 'upload' }
+                - { property: 'upload', label: 'Téléchargement(s)', type: 'easyadmin_autocomplete' }
 
 
         User:
@@ -156,6 +162,7 @@ easy_admin:
                     - { property: 'title', label: 'Titre' }
                     - { property: 'image', label: 'Image' }
                     - { property: 'content', label: 'Contenu', type: 'ckeditor' }
+                    - { type: 'divider' }
                     - { property: 'user', label: 'SuperAdmin' }
         Upload:
             class: SuperCommBundle\Entity\Upload

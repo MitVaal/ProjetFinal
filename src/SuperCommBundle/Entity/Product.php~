@@ -27,6 +27,11 @@ class Product
      */
     private $id;
 
+    public function __toString()
+    {
+        return $this->title;
+    }
+
 
     /**
      * Set title

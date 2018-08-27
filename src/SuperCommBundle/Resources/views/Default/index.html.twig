@@ -49,21 +49,17 @@
     <div class="container-fluid">
         <div class="container p-4">
             <div class="row">
-                <div class="col-lg-4 boxService">
-                    <p>Article 1</p>
 
+                {% for article in articles|slice(0,3) %}
 
-                </div>
-                <div class="col-lg-4 boxService">
-                    <p>Article 2</p>
+                    <div class="col-lg-4 boxArticle">
+                        <h2>{{ article.title }}</h2>
+                        <p>{{ article.author }}</p>
+                        <img class="boxImg" src="{{ article.image }}">
+                    </div>
 
+                {% endfor %}
 
-                </div>
-                <div class="col-lg-4 boxService">
-                    <p>Article 3</p>
-
-
-                </div>
             </div>
         </div>
     </div>

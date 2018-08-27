@@ -2,6 +2,8 @@
 
 namespace SuperCommBundle\Entity;
 
+use Symfony\Component\Form\FormTypeInterface;
+
 /**
  * Category
  */
