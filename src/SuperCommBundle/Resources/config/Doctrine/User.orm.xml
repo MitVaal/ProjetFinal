@@ -8,6 +8,9 @@
         <id name="id" type="integer" column="id">
             <generator strategy="AUTO"/>
         </id>
+        <field name="lastname" type="string" column="lastname"/>
+        <field name="firstname" type="string" column="firstname"/>
+        <field name="status" type="string" column="status"/>
         <one-to-many
                 field="article"
                 target-entity="SuperCommBundle\Entity\Article"

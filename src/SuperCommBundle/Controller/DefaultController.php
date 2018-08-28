@@ -63,25 +63,6 @@ class DefaultController extends Controller
         ));
     }
 
-    public function inscriptionFormAction(Request $request)
-    {
-        $prospect = new Prospect();
-        $form = $this->createForm(ProspectType::class, $prospect);
-        $formView = $form->createView();
-
-        $form->handleRequest($request);
-        if ($form->isSubmitted()&& $form->isValid()){
-            $prospect = $form->getData();
-
-            $entityManager = $this->getDoctrine()->getManager();
-            $entityManager->persist($prospect);
-            $entityManager->flush();
-        }
-
-        return $this->render('@SuperComm/Default/form_inscription.html.twig', array(
-            'formView' => $formView
-        ));
-    }
 
     public function mentionsLegalesAction()
     {

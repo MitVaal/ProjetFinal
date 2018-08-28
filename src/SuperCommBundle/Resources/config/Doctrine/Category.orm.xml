@@ -9,10 +9,5 @@
             <generator strategy="AUTO"/>
         </id>
         <field name="label" type="string" column="label"/>
-        <one-to-many
-                field="article"
-                target-entity="SuperCommBundle\Entity\Article"
-                mapped-by="category">
-        </one-to-many>
     </entity>
 </doctrine-mapping>

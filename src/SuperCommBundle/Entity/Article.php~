@@ -230,4 +230,35 @@ class Article
     {
         return $this->category;
     }
+    /**
+     * Constructor
+     */
+    public function __construct()
+    {
+        $this->category = new \Doctrine\Common\Collections\ArrayCollection();
+    }
+
+    /**
+     * Add category
+     *
+     * @param \SuperCommBundle\Entity\Category $category
+     *
+     * @return Article
+     */
+    public function addCategory(\SuperCommBundle\Entity\Category $category)
+    {
+        $this->category[] = $category;
+
+        return $this;
+    }
+
+    /**
+     * Remove category
+     *
+     * @param \SuperCommBundle\Entity\Category $category
+     */
+    public function removeCategory(\SuperCommBundle\Entity\Category $category)
+    {
+        $this->category->removeElement($category);
+    }
 }

@@ -33,3 +33,8 @@ services:
     # AppBundle\Service\ExampleService:
     #     arguments:
     #         $someArgument: 'some_value'
+
+    supercomm.form.user:
+            class: SuperCommBundle\Form\UserType
+            tags:
+                - { name: form.type, alias: supercommbundle_user }

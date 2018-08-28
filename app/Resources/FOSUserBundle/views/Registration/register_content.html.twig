@@ -5,23 +5,39 @@
 
 {{ form_errors(form) }}
 <div class="subscribeForm">
-    {{ form_label(form.username, 'Identifiant', {'label_attr': {'class': 'labelLogin'}}) }}<br>
+    {{ form_label(form.lastname, 'Nom*', {'label_attr': {'class': 'labelLogin'}}) }}<br>
+    {{ form_widget(form.lastname, {'attr': {'class': 'userInput'}}) }}
+    {{ form_errors(form.lastname) }}
+</div>
+
+<div class="subscribeForm">
+    {{ form_label(form.firstname, 'Prénom*', {'label_attr': {'class': 'labelLogin'}}) }}<br>
+    {{ form_widget(form.firstname, {'attr': {'class': 'userInput'}}) }}
+    {{ form_errors(form.firstname) }}
+</div>
+<div class="subscribeForm">
+    {{ form_label(form.username, 'Identifiant*', {'label_attr': {'class': 'labelLogin'}}) }}<br>
     {{ form_widget(form.username, {'attr': {'class': 'userInput'}}) }}
     {{ form_errors(form.username) }}
 </div>
 <div class="subscribeForm">
-    {{ form_label(form.email, 'Email', {'label_attr': {'class': 'labelLogin'}}) }}<br>
+    {{ form_label(form.email, 'Email*', {'label_attr': {'class': 'labelLogin'}}) }}<br>
     {{ form_widget(form.email, {'attr': {'class': 'userInput'}}) }}
     {{ form_errors(form.email) }}
 </div>
 <div class="subscribeForm">
-    {{ form_label(form.plainPassword.first, 'Mot de Passe', {'label_attr': {'class': 'labelLogin'}}) }}<br>
+    {{ form_label(form.plainPassword.first, 'Mot de Passe*', {'label_attr': {'class': 'labelLogin'}}) }}<br>
     {{ form_widget(form.plainPassword.first, {'attr': {'class': 'userInput'}}) }}
     {{ form_errors(form.plainPassword.first) }}
 </div>
 <div class="subscribeForm">
-    {{ form_label(form.plainPassword.second, 'Répéter le mot de passe', {'label_attr': {'class': 'labelLogin'}}) }}<br>
+    {{ form_label(form.plainPassword.second, 'Répéter le mot de passe*', {'label_attr': {'class': 'labelLogin'}}) }}<br>
     {{ form_widget(form.plainPassword.second, {'attr': {'class': 'userInput'}}) }}
+</div>
+<div class="subscribeForm">
+    {{ form_label(form.status, 'Vous êtes ?*', {'label_attr': {'class': 'labelLogin'}}) }}<br>
+    {{ form_widget(form.status, {'attr': {'class': 'userInput'}}) }}
+    {{ form_errors(form.status) }}
 </div>
 {{ form_rest(form) }}
 <div>

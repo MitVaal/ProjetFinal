@@ -18,10 +18,10 @@
                 target-entity="SuperCommBundle\Entity\User"
                 inversed-by="article">
         </many-to-one>
-        <many-to-one
+        <many-to-many
                 field="category"
                 target-entity="SuperCommBundle\Entity\Category"
                 inversed-by="article">
-        </many-to-one>
+        </many-to-many>
     </entity>
 </doctrine-mapping>

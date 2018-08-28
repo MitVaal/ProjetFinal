@@ -76,6 +76,9 @@ fos_user:
     from_email:
         address: "mathilde.vaal@lapiscine.pro"
         sender_name: "Mathilde Vaal"
+    registration:
+        form:
+            type: SuperCommBundle\Form\UserType
 
 easy_admin:
     site_name: 'Admin SuperComm'
@@ -84,8 +87,8 @@ easy_admin:
         assets:
             favicon: 'assets/images/favicons/favicon.png'
     list:
-        actions: ['new', 'show']
-        max_results: 25
+        actions: ['show']
+        max_results: 15
     entities:
         Article:
             class: SuperCommBundle\Entity\Article
@@ -102,7 +105,8 @@ easy_admin:
                     - { property: 'category', label: 'Catégorie(s)' }
                     - { property: 'user', label: 'Expert'}
             form:
-               fields:
+                title: "Modifier l'article"
+                fields:
                     - { property: 'title', label: 'Titre' }
                     - { property: 'author', label: 'Auteur' }
                     - { property: 'dateOnPublished', label: 'Date' }
@@ -112,7 +116,16 @@ easy_admin:
                     - { type: 'divider' }
                     - { property: 'category', label: 'Catégorie(s)' }
                     - { property: 'user', label: 'Expert'}
-
+            show:
+                title: 'Article'
+                fields:
+                    - { property: 'title', label: 'Titre' }
+                    - { property: 'author', label: 'Auteur' }
+                    - { property: 'dateOnPublished', label: 'Date' }
+                    - { property: 'image', label: 'Image' }
+                    - { property: 'content', label: 'Contenu' }
+                    - { property: 'category', label: 'Catégorie(s)' }
+                    - { property: 'user', label: 'Expert'}
         User:
             class: SuperCommBundle\Entity\User
             label: 'Utilisateurs'
@@ -120,7 +133,10 @@ easy_admin:
                 title: 'Utilisateurs et Administrateurs'
                 fields:
                     - id
+                    - { property: 'lastname', label: 'Nom' }
+                    - { property: 'firstname', label: 'Prénom' }
                     - { property: 'username', label: 'Identifiant' }
+                    - { property: 'status', label: 'Vous êtes ?' }
                     - { property: 'email', label: 'Email' }
                     - { property: 'enabled', label: 'Autorisé' }
                     - { property: 'lastLogin', label: 'Dernière connexion' }
@@ -128,8 +144,24 @@ easy_admin:
                     - { property: 'article', label: 'Article' }
                     - { property: 'product', label: 'Produit' }
             form:
+                title: "Modifier les données de l'utilisateur"
                 fields:
-                    - id
+                    - { property: 'lastname', label: 'Nom' }
+                    - { property: 'firstname', label: 'Prénom' }
+                    - { property: 'status', label: 'Vous êtes ?' }
+                    - { property: 'username', label: 'Identifiant' }
+                    - { property: 'email', label: 'Email' }
+                    - { property: 'enabled', label: 'Autorisé' }
+                    - { property: 'lastLogin', label: 'Dernière connexion' }
+                    - { property: 'roles', label: "Types d'utilisateurs" }
+                    - { property: 'article', label: 'Article' }
+                    - { property: 'product', label: 'Produit' }
+            show:
+                title: 'Utilisateur'
+                fields:
+                    - { property: 'lastname', label: 'Nom' }
+                    - { property: 'firstname', label: 'Prénom' }
+                    - { property: 'status', label: 'Vous êtes ?' }
                     - { property: 'username', label: 'Identifiant' }
                     - { property: 'email', label: 'Email' }
                     - { property: 'enabled', label: 'Autorisé' }
@@ -150,12 +182,20 @@ easy_admin:
                     - { property: 'content', label: 'Contenu' }
                     - { property: 'user', label: 'SuperAdmin' }
             form:
+                title: 'Modifier le produit'
                 fields:
                     - { property: 'title', label: 'Titre' }
                     - { property: 'image', label: 'Image' }
                     - { property: 'content', label: 'Contenu', type: 'ckeditor' }
                     - { type: 'divider' }
                     - { property: 'user', label: 'SuperAdmin' }
+            show:
+                title: 'Produit'
+                fields:
+                    - { property: 'title', label: 'Titre' }
+                    - { property: 'image', label: 'Image' }
+                    - { property: 'content', label: 'Contenu' }
+
 
         Category:
             class: SuperCommBundle\Entity\Category
@@ -166,9 +206,14 @@ easy_admin:
                     - id
                     - { property: 'label', label: 'Intitulé' }
             form:
+                title: "Modifier la catégorie d'articles"
                 fields:
                     - { property: 'label', label: 'Intitulé' }
-                    - article
+            show:
+                title: 'Catégorie'
+                fields:
+                    - { property: 'label', label: 'Intitulé' }
+
 
 
 ivory_ck_editor:
