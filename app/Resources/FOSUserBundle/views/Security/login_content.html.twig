@@ -4,25 +4,37 @@
     <div>{{ error.messageKey|trans(error.messageData, 'security') }}</div>
 {% endif %}
 
+<div class="container-fluid vueForm">
+    <div class="container vueForm d-flex flex-column justify-content-center align-items-center ">
 
-    <h1>Connexion</h1>
-    <form action="{{ path("fos_user_security_check") }}" method="post">
-        {% if csrf_token %}
-            <input type="hidden" name="_csrf_token" value="{{ csrf_token }}" />
-        {% endif %}
-        <div class="loginForm">
-            <label for="username">{{ 'security.login.username'|trans }}</label>
-            <input type="text" id="username" name="_username" value="{{ last_username }}" required="required" autocomplete="username" />
-        </div>
-        <div class="loginForm">
-            <label for="password">{{ 'security.login.password'|trans }}</label>
-            <input type="password" id="password" name="_password" required="required" autocomplete="current-password" />
-        </div>
-        <div class="loginForm">
-            <input type="checkbox" id="remember_me" name="_remember_me" value="on" />
-            <label for="remember_me">{{ 'security.login.remember_me'|trans }}</label>
-        </div>
-        <a href="{{ path('fos_user_registration_register') }}">S'INSCRIRE</a>
-        <input type="submit" id="_submit" name="_submit" value="{{ 'security.login.submit'|trans }}" />
-        <a href="{{ path('fos_user_resetting_request') }}">Mot de passe oublié ?</a>
-    </form>
+        <form class="borderForm" action="{{ path("fos_user_security_check") }}" method="post">
+            {% if csrf_token %}
+                <input type="hidden" name="_csrf_token" value="{{ csrf_token }}" />
+            {% endif %}
+
+            <div class="loginForm">
+                <label class="labelContactForm" for="username">{{ 'security.login.username'|trans }}</label>
+                <input class="widgetContactForm" type="text" id="username" name="_username" value="{{ last_username }}" required="required" autocomplete="username" />
+            </div>
+
+            <div class="loginForm">
+                <label class="labelContactForm" for="password">{{ 'security.login.password'|trans }}</label>
+                <input class="widgetContactForm" type="password" id="password" name="_password" required="required" autocomplete="current-password" />
+            </div>
+
+            <div class="text-center">
+                <input class="boutonConnexion" type="submit" id="_submit" name="_submit" value="{{ 'security.login.submit'|trans }}" />
+            </div>
+
+            <div class="forgetPassword">
+                <a href="{{ path('fos_user_resetting_request') }}">Mot de passe oublié ?</a>
+            </div>
+
+            <div class=" boutonInscription text-center">
+                <a href="{{ path('fos_user_registration_register') }}">Ou créez votre compte</a>
+            </div>
+
+        </form>
+
+    </div>
+</div>

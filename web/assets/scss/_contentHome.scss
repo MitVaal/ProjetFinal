@@ -9,7 +9,7 @@
 }
 
 .accrocheHome{
-  font-size: 1.5em;
+  font-size: 1.8em;
   margin: 20px;
   color: white;
   text-align: center;
@@ -18,16 +18,21 @@
 .cta {
   background-color: #00a8b2;
   padding: 10px 30px;
-  font-size: 20px;
+  font-size: 1.2em;
   color: white;
   border-radius: 10px;
-  width: 240px;
+  width: 234px;
   text-decoration-line: none!important;
+}
+
+.cta:hover{
+  color: $chartColor;
+  background-color: white;
 }
 
 .bandeauHome{
   background-color: white;
-  font-size: medium;
+  font-size: 1em;
   color: #00a8b2;
   text-align: center;
 }
@@ -36,7 +41,7 @@
   background-color: #00a8b2;
   width: 100%;
   color: white;
-  font-size: 1.5em;
+  font-size: 1.2em;
   text-align: center;
 }
 
@@ -48,9 +53,29 @@
 .boxImg{
   height: 200px;
   width: 300px;
+  object-fit: cover;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 
+.titleArticle{
+  font-weight: bold;
+  font-size: 1.1em;
+}
 
+.spanArticle{
+  font-size: 0.8em;
+  color: $logoColorGreen;
+
+}
+
+.extractArticle{
+  width: 300px;
+  margin: 0 auto;
+}
+
+/* mediaqueries homePage
+*/
 
 h1::before{
   content: 'Vous avez besoin d\'être visible sur le Web? Sans savoir par où commencer ?';

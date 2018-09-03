@@ -50,12 +50,14 @@
         <div class="container p-4">
             <div class="row">
 
-                {% for article in articles|slice(0,3) %}
+                {% for article in articles |reverse |slice (0,3) %}
 
                     <div class="col-lg-4 boxArticle">
-                        <h2>{{ article.title }}</h2>
-                        <p>{{ article.author }}</p>
+                        <span class="titleArticle">{{ article.title }}</span><br>
+                        <span class="spanArticle">{{ article.author }}</span><br>
+                        <span class="spanArticle">{{ article.dateOnPublished.date |date ('d/m/Y') }}</span>
                         <img class="boxImg" src="{{ article.image }}">
+                        <div class="extractArticle">{{ article.content |slice (0, 550) |raw }}... <a href="#" >Lire la suite</a></div>
                     </div>
 
                 {% endfor %}

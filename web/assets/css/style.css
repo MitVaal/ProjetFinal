@@ -1,34 +1,44 @@
 @charset "UTF-8";
-.AnteMenu {
-  background-color: #00a8b2;
-  padding: 10px;
-  text-align: right; }
-
-.boutonAnteMenu {
-  padding: 10px;
-  color: white;
-  font-size: 0.8em; }
+.navbar {
+  height: 80px; }
 
 .boutonMenu {
   background-color: #00a8b2;
   border-radius: 5px;
   font-size: 0.7em;
-  color: white !important; }
-
-.iconHome {
-  color: #00a8b2; }
+  color: white !important;
+  margin-right: 10px; }
 
 .ongletMenu {
   color: #00a8b2 !important;
   font-size: 0.8em; }
 
 .logoMenu {
-  width: 120px; }
+  width: 200px; }
 
 .footer {
   background-color: #00a8b2;
   color: white;
-  text-align: center; }
+  text-align: center;
+  font-size: 0.8em; }
+
+.socialMedia {
+  text-decoration-line: none !important;
+  color: #3B7271 !important; }
+  .socialMedia :hover {
+    color: white !important; }
+
+.linksHome {
+  text-decoration-line: none !important;
+  color: white !important; }
+  .linksHome :hover {
+    color: #3B7271 !important; }
+
+.linkMailto {
+  text-decoration-line: none !important;
+  color: white !important; }
+  .linkMailto :hover {
+    color: #3B7271 !important; }
 
 .bgImage {
   background-image: url("../images/Bg_homePage.jpg");
@@ -38,7 +48,7 @@
   height: 70vh; }
 
 .accrocheHome {
-  font-size: 1.5em;
+  font-size: 1.8em;
   margin: 20px;
   color: white;
   text-align: center; }
@@ -46,15 +56,19 @@
 .cta {
   background-color: #00a8b2;
   padding: 10px 30px;
-  font-size: 20px;
+  font-size: 1.2em;
   color: white;
   border-radius: 10px;
-  width: 240px;
+  width: 234px;
   text-decoration-line: none !important; }
+
+.cta:hover {
+  color: #00a8b2;
+  background-color: white; }
 
 .bandeauHome {
   background-color: white;
-  font-size: medium;
+  font-size: 1em;
   color: #00a8b2;
   text-align: center; }
 
@@ -62,7 +76,7 @@
   background-color: #00a8b2;
   width: 100%;
   color: white;
-  font-size: 1.5em;
+  font-size: 1.2em;
   text-align: center; }
 
 .boxArticle {
@@ -71,8 +85,25 @@
 
 .boxImg {
   height: 200px;
-  width: 300px; }
+  width: 300px;
+  object-fit: cover;
+  margin-top: 10px;
+  margin-bottom: 20px; }
 
+.titleArticle {
+  font-weight: bold;
+  font-size: 1.1em; }
+
+.spanArticle {
+  font-size: 0.8em;
+  color: #3B7271; }
+
+.extractArticle {
+  width: 300px;
+  margin: 0 auto; }
+
+/* mediaqueries homePage
+*/
 h1::before {
   content: 'Vous avez besoin d\'être visible sur le Web? Sans savoir par où commencer ?'; }
 
@@ -82,5 +113,106 @@ h1::before {
 
   .col-lg-4 {
     padding: 10px; } }
+.vueForm {
+  height: 82vh; }
+
+.borderForm {
+  border-style: solid;
+  border-color: #00a8b2;
+  border-radius: 5px;
+  border-width: 1px;
+  padding: 20px; }
+
+.labelContactForm {
+  color: #00a8b2;
+  padding: 5px;
+  width: 200px; }
+
+.widgetContactForm {
+  height: 30px;
+  width: 300px; }
+
+.boutonConnexion {
+  height: 30px;
+  width: 100px;
+  color: #00a8b2;
+  border-style: solid;
+  border-color: #00a8b2;
+  border-radius: 5px;
+  margin-top: 20px;
+  justify-content: center; }
+
+.boutonConnexion:hover {
+  background-color: #00a8b2;
+  color: white; }
+
+.boutonInscription {
+  margin: 0 auto;
+  height: 30px;
+  padding-top: 2px;
+  width: 200px;
+  color: #00a8b2 !important;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #00a8b2;
+  border-radius: 5px;
+  text-decoration-line: none !important;
+  text-align: center; }
+  .boutonInscription a {
+    text-decoration-line: none;
+    color: #00a8b2; }
+
+.boutonInscription:hover {
+  background-color: #00a8b2; }
+  .boutonInscription:hover a {
+    color: white !important; }
+
+.forgetPassword {
+  font-size: small;
+  text-align: center;
+  padding-bottom: 20px; }
+  .forgetPassword a {
+    color: #3B7271; }
+
+.boutonRegister {
+  margin: 20px auto;
+  height: 30px;
+  padding-top: 2px;
+  width: 200px;
+  color: #00a8b2 !important;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #00a8b2;
+  border-radius: 5px;
+  text-decoration-line: none !important;
+  text-align: center; }
+  .boutonRegister a {
+    text-decoration-line: none;
+    color: #00a8b2; }
+
+.boutonRegister:hover {
+  background-color: #00a8b2;
+  color: white !important; }
+
+.boutonResetPassword {
+  height: 30px;
+  width: 250px;
+  color: #00a8b2;
+  border-style: solid;
+  border-color: #00a8b2;
+  border-radius: 5px;
+  margin-top: 20px;
+  justify-content: center; }
+
+.boutonResetPassword:hover {
+  background-color: #00a8b2;
+  color: white; }
+
+.box {
+  margin-top: 10px;
+  margin-bottom: 10px; }
+
+.titleArticleBlog {
+  font-size: 1.1em; }
 
 /*# sourceMappingURL=style.css.map */

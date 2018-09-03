@@ -5,15 +5,40 @@
 
 {% block content %}
 
-    {% for article in articles %}
+<div class="container-fluid">
+    <div class="container d-flex flex-column align-items-center justify-content-center">
 
-        <div>
-            <p>{{ article.title }}</p>
-            <p>{{ article.author }}</p>
-            <img src="{{ article.image }}">
-            <p>{{ article.content|raw }}</p>
+        <div class="row">
+
+            <div class="col-lg-9">
+                <div class="row ">
+
+                    {% for article in articles |reverse %}
+
+                    <div class="col-lg-5 box"><img class="boxImg" src="{{ article.image }}"></div>
+                    <div class="col-lg-7 box">
+                        <span class="titleArticleBlog">{{ article.title }}</span><br>
+                        <span class="spanArticle">{{ article.author }}</span><br>
+                        <span class="spanArticle">{{ article.dateOnPublished.date |date ('d/m/Y') }}</span>
+                        <div>{{ article.content |slice (0, 540) |raw }}... <a href="#" >Lire la suite</a></div>
+                    </div>
+
+                    {% endfor %}
+
+                </div>
+            </div>
+
+            <div class="col-lg-3">
+                <div class="row sideBar"></div>
+                <div class="row sideBar"></div>
+                <div class="row sideBar"></div>
+            </div>
+
         </div>
 
-    {% endfor %}
+    </div>
+</div>
 
 {% endblock %}
+
+

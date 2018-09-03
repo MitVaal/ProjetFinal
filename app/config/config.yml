@@ -81,62 +81,36 @@ fos_user:
             type: SuperCommBundle\Form\UserType
 
 easy_admin:
+    formats:
+        date: 'd/m/Y'
     site_name: 'Admin SuperComm'
     design:
+        menu:
+            - { entity: 'User', label: 'Utilisateurs', icon: 'users' }
+            - { entity: 'Product', label: 'Produits', icon: 'shopping-cart' }
+            - { entity: 'Article', label: 'Articles', icon: 'th-large' }
+            - { entity: 'Category', label: 'Catégories', icon: 'tags' }
         brand_color: '#00a8b2'
+        color_scheme: 'light'
         assets:
             favicon: 'assets/images/favicons/favicon.png'
     list:
         actions: ['show']
         max_results: 15
     entities:
-        Article:
-            class: SuperCommBundle\Entity\Article
-            label: 'Articles'
-            list:
-                title: 'Articles du blog'
-                fields:
-                    - id
-                    - { property: 'title', label: 'Titre' }
-                    - { property: 'author', label: 'Auteur' }
-                    - { property: 'dateOnPublished', label: 'Date' }
-                    - { property: 'image', label: 'Image' }
-                    - { property: 'content', label: 'Contenu' }
-                    - { property: 'category', label: 'Catégorie(s)' }
-                    - { property: 'user', label: 'Expert'}
-            form:
-                title: "Modifier l'article"
-                fields:
-                    - { property: 'title', label: 'Titre' }
-                    - { property: 'author', label: 'Auteur' }
-                    - { property: 'dateOnPublished', label: 'Date' }
-                    - { type: 'divider' }
-                    - { property: 'image', label: 'Image' }
-                    - { property: 'content', label: 'Contenu', type: 'ckeditor' }
-                    - { type: 'divider' }
-                    - { property: 'category', label: 'Catégorie(s)' }
-                    - { property: 'user', label: 'Expert'}
-            show:
-                title: 'Article'
-                fields:
-                    - { property: 'title', label: 'Titre' }
-                    - { property: 'author', label: 'Auteur' }
-                    - { property: 'dateOnPublished', label: 'Date' }
-                    - { property: 'image', label: 'Image' }
-                    - { property: 'content', label: 'Contenu' }
-                    - { property: 'category', label: 'Catégorie(s)' }
-                    - { property: 'user', label: 'Expert'}
+
         User:
             class: SuperCommBundle\Entity\User
             label: 'Utilisateurs'
             list:
                 title: 'Utilisateurs et Administrateurs'
+                max_results: 10
                 fields:
                     - id
                     - { property: 'lastname', label: 'Nom' }
                     - { property: 'firstname', label: 'Prénom' }
-                    - { property: 'username', label: 'Identifiant' }
                     - { property: 'status', label: 'Vous êtes ?' }
+                    - { property: 'username', label: 'Identifiant' }
                     - { property: 'email', label: 'Email' }
                     - { property: 'enabled', label: 'Autorisé' }
                     - { property: 'lastLogin', label: 'Dernière connexion' }
@@ -144,20 +118,23 @@ easy_admin:
                     - { property: 'article', label: 'Article' }
                     - { property: 'product', label: 'Produit' }
             form:
-                title: "Modifier les données de l'utilisateur"
+                title: "Modifier le profil de l'utilisateur"
                 fields:
+                    - { type: 'group', css_class: 'col-sm-12', label: 'Infos Prospect', icon: 'id-card' }
                     - { property: 'lastname', label: 'Nom' }
                     - { property: 'firstname', label: 'Prénom' }
                     - { property: 'status', label: 'Vous êtes ?' }
+                    - { type: 'group', label: 'Infos Connexion :', icon: 'sign-in', css_class: 'col-sm-12' }
                     - { property: 'username', label: 'Identifiant' }
                     - { property: 'email', label: 'Email' }
                     - { property: 'enabled', label: 'Autorisé' }
                     - { property: 'lastLogin', label: 'Dernière connexion' }
                     - { property: 'roles', label: "Types d'utilisateurs" }
+                    - { type: 'group', css_class: 'col-sm-12', label: 'Actions Admin :', icon: 'database' }
                     - { property: 'article', label: 'Article' }
                     - { property: 'product', label: 'Produit' }
             show:
-                title: 'Utilisateur'
+                title: 'Profil utilisateur'
                 fields:
                     - { property: 'lastname', label: 'Nom' }
                     - { property: 'firstname', label: 'Prénom' }
@@ -178,14 +155,14 @@ easy_admin:
                 fields:
                     - id
                     - { property: 'title', label: 'Titre' }
-                    - { property: 'image', label: 'Image' }
+                    - { property: 'image', label: 'Image', type: 'image' }
                     - { property: 'content', label: 'Contenu' }
                     - { property: 'user', label: 'SuperAdmin' }
             form:
                 title: 'Modifier le produit'
                 fields:
                     - { property: 'title', label: 'Titre' }
-                    - { property: 'image', label: 'Image' }
+                    - { property: 'image', label: 'Image', type: 'image' }
                     - { property: 'content', label: 'Contenu', type: 'ckeditor' }
                     - { type: 'divider' }
                     - { property: 'user', label: 'SuperAdmin' }
@@ -193,9 +170,45 @@ easy_admin:
                 title: 'Produit'
                 fields:
                     - { property: 'title', label: 'Titre' }
-                    - { property: 'image', label: 'Image' }
+                    - { property: 'image', label: 'Image', type: 'image' }
                     - { property: 'content', label: 'Contenu' }
 
+        Article:
+            class: SuperCommBundle\Entity\Article
+            label: 'Articles'
+            list:
+                title: 'Articles du blog'
+                max_results: 5
+                fields:
+                    - id
+                    - { property: 'title', label: 'Titre' }
+                    - { property: 'author', label: 'Auteur' }
+                    - { property: 'dateOnPublished', label: 'Date' }
+                    - { property: 'image', label: 'Image', type: 'image' }
+                    - { property: 'category', label: 'Catégorie(s)' }
+                    - { property: 'user', label: 'Expert'}
+            form:
+                title: "Modifier l'article"
+                fields:
+                    - { property: 'title', label: 'Titre' }
+                    - { property: 'author', label: 'Auteur' }
+                    - { property: 'dateOnPublished', label: 'Date' }
+                    - { type: 'divider' }
+                    - { property: 'image', label: 'Image' }
+                    - { property: 'content', label: 'Contenu', type: 'ckeditor' }
+                    - { type: 'divider' }
+                    - { property: 'category', label: 'Catégorie(s)' }
+                    - { property: 'user', label: 'Expert'}
+            show:
+                title: 'Article'
+                fields:
+                    - { property: 'title', label: 'Titre' }
+                    - { property: 'author', label: 'Auteur' }
+                    - { property: 'dateOnPublished', label: 'Date' }
+                    - { property: 'image', label: 'Image', type: 'image' }
+                    - { property: 'content', label: 'Contenu', type: 'raw' }
+                    - { property: 'category', label: 'Catégorie(s)' }
+                    - { property: 'user', label: 'Expert'}
 
         Category:
             class: SuperCommBundle\Entity\Category

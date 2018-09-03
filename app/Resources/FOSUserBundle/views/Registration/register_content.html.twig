@@ -1,46 +1,52 @@
 {% trans_default_domain 'FOSUserBundle' %}
 
-<h1>S'inscrire</h1>
-{{ form_start(form)}}
+<div class="container-fluid vueForm">
+    <div class="container vueForm d-flex flex-column justify-content-center align-items-center ">
 
-{{ form_errors(form) }}
-<div class="subscribeForm">
-    {{ form_label(form.lastname, 'Nom*', {'label_attr': {'class': 'labelLogin'}}) }}<br>
-    {{ form_widget(form.lastname, {'attr': {'class': 'userInput'}}) }}
-    {{ form_errors(form.lastname) }}
-</div>
+        {{ form_start(form)}}
 
-<div class="subscribeForm">
-    {{ form_label(form.firstname, 'Prénom*', {'label_attr': {'class': 'labelLogin'}}) }}<br>
-    {{ form_widget(form.firstname, {'attr': {'class': 'userInput'}}) }}
-    {{ form_errors(form.firstname) }}
+        {{ form_errors(form) }}
+
+        <div class="subscribeForm">
+            {{ form_label(form.lastname, 'Nom*', {'label_attr': {'class': 'labelContactForm'}}) }}<br>
+            {{ form_widget(form.lastname, {'attr': {'class': 'widgetContactForm'}}) }}
+            {{ form_errors(form.lastname) }}
+        </div>
+
+        <div class="subscribeForm">
+            {{ form_label(form.firstname, 'Prénom*', {'label_attr': {'class': 'labelContactForm'}}) }}<br>
+            {{ form_widget(form.firstname, {'attr': {'class': 'widgetContactForm'}}) }}
+            {{ form_errors(form.firstname) }}
+        </div>
+        <div class="subscribeForm">
+            {{ form_label(form.username, 'Identifiant*', {'label_attr': {'class': 'labelContactForm'}}) }}<br>
+            {{ form_widget(form.username, {'attr': {'class': 'widgetContactForm'}}) }}
+            {{ form_errors(form.username) }}
+        </div>
+        <div class="subscribeForm">
+            {{ form_label(form.email, 'Email*', {'label_attr': {'class': 'labelContactForm'}}) }}<br>
+            {{ form_widget(form.email, {'attr': {'class': 'widgetContactForm'}}) }}
+            {{ form_errors(form.email) }}
+        </div>
+        <div class="subscribeForm">
+            {{ form_label(form.plainPassword.first, 'Mot de Passe*', {'label_attr': {'class': 'labelContactForm'}}) }}<br>
+            {{ form_widget(form.plainPassword.first, {'attr': {'class': 'widgetContactForm'}}) }}
+            {{ form_errors(form.plainPassword.first) }}
+        </div>
+        <div class="subscribeForm">
+            {{ form_label(form.plainPassword.second, 'Répéter le mot de passe*', {'label_attr': {'class': 'labelContactForm'}}) }}<br>
+            {{ form_widget(form.plainPassword.second, {'attr': {'class': 'widgetContactForm'}}) }}
+        </div>
+        <div class="subscribeForm">
+            {{ form_label(form.status, 'Vous êtes ?*', {'label_attr': {'class': 'labelContactForm'}}) }}<br>
+            {{ form_widget(form.status, {'attr': {'class': 'widgetContactForm'}}) }}
+            {{ form_errors(form.status) }}
+        </div>
+        {{ form_rest(form) }}
+        <div class="text-center">
+            <input class="boutonRegister" type="submit" value="{{ 'registration.submit'|trans }}" />
+        </div>
+        {{ form_end(form) }}
+
+    </div>
 </div>
-<div class="subscribeForm">
-    {{ form_label(form.username, 'Identifiant*', {'label_attr': {'class': 'labelLogin'}}) }}<br>
-    {{ form_widget(form.username, {'attr': {'class': 'userInput'}}) }}
-    {{ form_errors(form.username) }}
-</div>
-<div class="subscribeForm">
-    {{ form_label(form.email, 'Email*', {'label_attr': {'class': 'labelLogin'}}) }}<br>
-    {{ form_widget(form.email, {'attr': {'class': 'userInput'}}) }}
-    {{ form_errors(form.email) }}
-</div>
-<div class="subscribeForm">
-    {{ form_label(form.plainPassword.first, 'Mot de Passe*', {'label_attr': {'class': 'labelLogin'}}) }}<br>
-    {{ form_widget(form.plainPassword.first, {'attr': {'class': 'userInput'}}) }}
-    {{ form_errors(form.plainPassword.first) }}
-</div>
-<div class="subscribeForm">
-    {{ form_label(form.plainPassword.second, 'Répéter le mot de passe*', {'label_attr': {'class': 'labelLogin'}}) }}<br>
-    {{ form_widget(form.plainPassword.second, {'attr': {'class': 'userInput'}}) }}
-</div>
-<div class="subscribeForm">
-    {{ form_label(form.status, 'Vous êtes ?*', {'label_attr': {'class': 'labelLogin'}}) }}<br>
-    {{ form_widget(form.status, {'attr': {'class': 'userInput'}}) }}
-    {{ form_errors(form.status) }}
-</div>
-{{ form_rest(form) }}
-<div>
-    <input type="submit" value="{{ 'registration.submit'|trans }}" />
-</div>
-{{ form_end(form) }}

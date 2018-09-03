@@ -1,24 +1,12 @@
-.AnteMenu {
-  background-color: $chartColor;
-  padding: 10px;
-  text-align: right;
+.navbar{
+  height: 80px;
 }
-
-.boutonAnteMenu {
-  padding: 10px;
-  color: white;
-  font-size: 0.8em;
-}
-
 .boutonMenu {
   background-color: $chartColor;
   border-radius: 5px;
   font-size: 0.7em;
   color: white!important;
-}
-
-.iconHome{
-  color: $chartColor;
+  margin-right: 10px;
 }
 
 .ongletMenu{
@@ -27,6 +15,5 @@
 }
 
 .logoMenu{
-
-  width: 120px;
+  width: 200px;
 }

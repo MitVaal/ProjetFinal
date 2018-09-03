@@ -5,8 +5,6 @@ namespace SuperCommBundle\Controller;
 
 use SuperCommBundle\Entity\Article;
 use SuperCommBundle\Entity\Product;
-use SuperCommBundle\Entity\Prospect;
-use SuperCommBundle\Form\ProspectType;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
 

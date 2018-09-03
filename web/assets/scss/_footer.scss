@@ -2,4 +2,29 @@
   background-color: $chartColor;
   color: white;
   text-align: center;
+  font-size: 0.8em;
+}
+
+.socialMedia{
+  text-decoration-line: none!important;
+  color: $logoColorGreen!important;
+  :hover{
+    color: white!important;
+  }
+}
+
+.linksHome{
+  text-decoration-line: none!important;
+  color: white!important;
+  :hover{
+    color: $logoColorGreen!important;
+  }
+}
+
+.linkMailto{
+  text-decoration-line: none!important;
+  color: white!important;
+  :hover{
+    color: $logoColorGreen!important;
+  }
 }

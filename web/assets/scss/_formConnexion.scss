@@ -1,0 +1,112 @@
+.vueForm{
+  height: 82vh;
+}
+
+.borderForm{
+  border-style: solid;
+  border-color: $chartColor;
+  border-radius: 5px;
+  border-width: 1px;
+  padding: 20px;
+
+}
+
+.labelContactForm{
+  color: $chartColor;
+  padding: 5px;
+  width: 200px;
+}
+
+.widgetContactForm{
+  height: 30px;
+  width: 300px;
+}
+
+.boutonConnexion{
+  height: 30px;
+  width: 100px;
+  color: $chartColor;
+  border-style: solid;
+  border-color: $chartColor;
+  border-radius: 5px;
+  margin-top: 20px;
+  justify-content: center;
+}
+
+.boutonConnexion:hover{
+  background-color: $chartColor;
+  color: white;
+}
+
+.boutonInscription{
+  margin:0 auto;
+  height: 30px;
+  padding-top: 2px;
+  width: 200px;
+  color: $chartColor!important;
+  border-style: solid;
+  border-width: 1px;
+  border-color: $chartColor;
+  border-radius: 5px;
+  text-decoration-line: none!important;
+  text-align: center;
+  a{
+    text-decoration-line: none;
+    color: $chartColor;
+  }
+}
+
+.boutonInscription:hover{
+  background-color: $chartColor;
+  a{
+    color: white!important;
+  }
+}
+
+.forgetPassword{
+  font-size: small;
+  text-align: center;
+  padding-bottom: 20px;
+  a{
+    color: $logoColorGreen;
+  }
+}
+
+.boutonRegister{
+  margin: 20px auto;
+  height: 30px;
+  padding-top: 2px;
+  width: 200px;
+  color: $chartColor!important;
+  border-style: solid;
+  border-width: 1px;
+  border-color: $chartColor;
+  border-radius: 5px;
+  text-decoration-line: none!important;
+  text-align: center;
+  a{
+    text-decoration-line: none;
+    color: $chartColor;
+  }
+}
+
+.boutonRegister:hover{
+  background-color: $chartColor;
+  color: white!important;
+}
+
+.boutonResetPassword{
+  height: 30px;
+  width: 250px;
+  color: $chartColor;
+  border-style: solid;
+  border-color: $chartColor;
+  border-radius: 5px;
+  margin-top: 20px;
+  justify-content: center;
+}
+
+.boutonResetPassword:hover{
+  background-color: $chartColor;
+  color: white;
+}
