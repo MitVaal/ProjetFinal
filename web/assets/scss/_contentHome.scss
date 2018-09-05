@@ -5,7 +5,7 @@
 }
 
 .vue{
-  height:70vh;
+  height:75vh;
 }
 
 .accrocheHome{
@@ -78,13 +78,13 @@
 */
 
 h1::before{
-  content: 'Vous avez besoin d\'être visible sur le Web? Sans savoir par où commencer ?';
+  content: 'Vous avez besoin de vous faire connaître ? Vous voulez être présent sur le Web?';
 }
 
 @media (max-width: 768px) {
 
   h1::before{
-    content: 'Vous avez besoin d\'être visible sur le Web?';
+    content: 'Vous voulez être présent sur le Web?';
   }
   .col-lg-4{
     padding: 10px;

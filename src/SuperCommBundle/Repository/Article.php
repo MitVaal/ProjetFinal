@@ -10,4 +10,20 @@ namespace SuperCommBundle\Repository;
  */
 class Article extends \Doctrine\ORM\EntityRepository
 {
+    /*
+    public function findByCategory($categoryId){
+
+        $query = $this->createQueryBuilder('a')
+            ->innerJoin('a.category', 'c')
+            ->addSelect('c')
+            ->andWhere('a.id = :id')
+            ->setParameter('c', $categoryId)
+            ->getQuery()
+            ->getResult();
+
+        return $query;
+
+    }
+    */
 }
+

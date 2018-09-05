@@ -6,6 +6,9 @@ use Symfony\Component\Form\FormTypeInterface;
 
 /**
  * Category
+ *
+ * @ORM\Entity(repositoryClass=CategoryRepository::class)
+
  */
 class Category
 {

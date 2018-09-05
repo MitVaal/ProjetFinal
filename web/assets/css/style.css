@@ -1,6 +1,6 @@
 @charset "UTF-8";
 .navbar {
-  height: 80px; }
+  height: 70px; }
 
 .boutonMenu {
   background-color: #00a8b2;
@@ -45,7 +45,7 @@
   background-size: cover; }
 
 .vue {
-  height: 70vh; }
+  height: 75vh; }
 
 .accrocheHome {
   font-size: 1.8em;
@@ -105,11 +105,11 @@
 /* mediaqueries homePage
 */
 h1::before {
-  content: 'Vous avez besoin d\'être visible sur le Web? Sans savoir par où commencer ?'; }
+  content: 'Vous avez besoin de vous faire connaître ? Vous voulez être présent sur le Web?'; }
 
 @media (max-width: 768px) {
   h1::before {
-    content: 'Vous avez besoin d\'être visible sur le Web?'; }
+    content: 'Vous voulez être présent sur le Web?'; }
 
   .col-lg-4 {
     padding: 10px; } }
@@ -208,11 +208,76 @@ h1::before {
   background-color: #00a8b2;
   color: white; }
 
+.bandeauBlog {
+  border-top: solid;
+  border-bottom: solid;
+  border-width: 2px;
+  border-color: #3B7271;
+  background-image: url("../images/BandeauBlog.jpg");
+  background-size: cover; }
+
+.bigBox {
+  padding-right: 30px;
+  border-right: 1px solid #00a8b2; }
+
 .box {
   margin-top: 10px;
-  margin-bottom: 10px; }
+  margin-bottom: 10px;
+  border-bottom: solid;
+  border-bottom-color: #00a8b2;
+  border-bottom-width: 1px; }
 
 .titleArticleBlog {
   font-size: 1.1em; }
+
+.titreBlog {
+  font-size: 1.6em;
+  color: #3B7271; }
+
+.sideBar {
+  padding-top: 10px;
+  padding-bottom: 30px;
+  border-bottom-color: #3B7271;
+  border-bottom-width: 5px;
+  border-bottom-style: double;
+  color: #00a8b2;
+  font-size: 0.9em; }
+
+.titreSidebar {
+  color: #3B7271;
+  text-align: center; }
+
+.pagination {
+  font-size: 0.8em;
+  float: right;
+  margin-top: 5px; }
+
+.current {
+  padding: 3px 8px;
+  margin-left: 5px;
+  background-color: #00a8b2;
+  color: white;
+  text-align: center; }
+
+.inactive {
+  padding: 3px 8px;
+  margin-left: 5px;
+  color: #555;
+  background-color: #f3f3f3;
+  text-decoration-line: none !important; }
+
+.inactive:hover {
+  color: white !important;
+  background-color: #00a8b2 !important; }
+
+.input-group.md-form.form-sm.form-2 {
+  border: 1px solid #00a8b2;
+  border-radius: 0.25em; }
+
+.input-group-text {
+  background-color: #00a8b2 !important; }
+
+.fa.fa-search {
+  color: white; }
 
 /*# sourceMappingURL=style.css.map */

@@ -5,39 +5,66 @@
 
 {% block content %}
 
-<div class="container-fluid">
-    <div class="container d-flex flex-column align-items-center justify-content-center">
+    <div class="container-fluid bandeauBlog p-5">
 
-        <div class="row">
+        <div class="container d-flex flex-row align-items-center justify-content-center">
+            <h2 class="titreBlog">La boîte à outils proposée par SuperComm</h2>
+        </div>
+    </div>
 
-            <div class="col-lg-9">
-                <div class="row ">
+    <div class="container-fluid">
+        <div class="container d-flex flex-column align-items-center justify-content-center">
 
-                    {% for article in articles |reverse %}
+            <div class="row">
 
-                    <div class="col-lg-5 box"><img class="boxImg" src="{{ article.image }}"></div>
-                    <div class="col-lg-7 box">
-                        <span class="titleArticleBlog">{{ article.title }}</span><br>
-                        <span class="spanArticle">{{ article.author }}</span><br>
-                        <span class="spanArticle">{{ article.dateOnPublished.date |date ('d/m/Y') }}</span>
-                        <div>{{ article.content |slice (0, 540) |raw }}... <a href="#" >Lire la suite</a></div>
+                <div class="col-lg-9 p-3">
+                    <div class="row bigBox">
+
+                        {% for article in articles |reverse %}
+
+                            <div class="col-lg-5 box"><img class="boxImg" src="{{ article.image }}"></div>
+                            <div class="col-lg-7 box">
+                                <span class="titleArticleBlog">{{ article.title }}</span><br>
+                                <span class="spanArticle">Par {{ article.author }} | le {{ article.dateOnPublished.date |date ('d/m/Y') }}</span><br>
+                                <div>{{ article.content |slice (0, 540) |raw }}... <a href="#" >Lire la suite</a></div>
+                            </div>
+
+                        {% endfor %}
+
                     </div>
 
-                    {% endfor %}
+                    <div class="pagination">
+                        <span class="current">1</span>
+                        <a href="#" class="inactive">2</a>
+                        <a href="#" class="inactive">
+                            <span class="arrows">›</span>
+                        </a>
+                        <a href="#" class="inactive">
+                            <span class="arrows">»</span>
+                        </a>
+                    </div>
 
                 </div>
-            </div>
 
-            <div class="col-lg-3">
-                <div class="row sideBar"></div>
-                <div class="row sideBar"></div>
-                <div class="row sideBar"></div>
+                <div class="col-lg-3 pl-5 pt-3">
+                    <div class="row sideBar">
+                        <div class="input-group md-form form-sm form-2 pl-0">
+                            <input class="form-control my-0 py-1 red-border" type="text" placeholder="Rechercher..." aria-label="Search">
+                            <div class="input-group-append">
+                                <span class="input-group-text red lighten-3" id="basic-text1"><i class="fa fa-search text-grey" aria-hidden="true"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row sideBar">RESEAUX SOCIAUX</div>
+                    <div class="row sideBar">BLOGS A SUIVRE</div>
+                    <div class="row sideBar">OUTILS SEO</div>
+
+                </div>
+
             </div>
 
         </div>
-
     </div>
-</div>
 
 {% endblock %}
 

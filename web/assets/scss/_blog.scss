@@ -1,8 +1,86 @@
+.bandeauBlog{
+  border-top: solid;
+  border-bottom: solid;
+  border-width: 2px;
+  border-color: $logoColorGreen;
+  background-image: url("../images/BandeauBlog.jpg");
+  background-size: cover;
+}
+
+.bigBox{
+  padding-right: 30px;
+  border-right: 1px solid $chartColor;
+}
+
 .box{
   margin-top: 10px;
   margin-bottom: 10px;
+  border-bottom: solid;
+  border-bottom-color: $chartColor;
+  border-bottom-width: 1px;
 }
 
 .titleArticleBlog{
   font-size: 1.1em;
+}
+
+.titreBlog{
+  font-size: 1.6em;
+  color: $logoColorGreen;
+}
+
+.sideBar{
+  padding-top: 10px;
+  padding-bottom: 30px;
+  border-bottom-color: $logoColorGreen;
+  border-bottom-width: 5px;
+  border-bottom-style: double;
+  color: $chartColor;
+  font-size: 0.9em;
+}
+
+.titreSidebar{
+  color: $logoColorGreen;
+  text-align: center;
+}
+
+.pagination {
+  font-size: 0.8em;
+  float: right;
+  margin-top: 5px;
+}
+
+.current {
+  padding: 3px 8px;
+  margin-left: 5px;;
+  background-color: $chartColor;
+  color: white;
+  text-align: center;
+}
+
+.inactive{
+  padding: 3px 8px;
+  margin-left: 5px;
+  color: #555;
+  background-color: #f3f3f3;
+  text-decoration-line: none!important;
+
+}
+
+.inactive:hover{
+  color: white!important;
+  background-color: $chartColor!important;
+}
+
+.input-group.md-form.form-sm.form-2 {
+  border: 1px solid $chartColor;
+  border-radius: 0.25em;
+}
+
+.input-group-text{
+  background-color: $chartColor!important;
+}
+
+.fa.fa-search{
+  color: white;
 }

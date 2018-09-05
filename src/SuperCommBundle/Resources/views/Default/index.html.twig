@@ -15,12 +15,12 @@
     </div>
 
     <div class="container-fluid">
-        <div class="container bandeauHome p-5 d-flex flex-row">
+        <div class="container bandeauHome p-4 d-flex flex-row">
             <div class="row">
                 <div class="col-lg-4 p-md-3">
                     <div class="row">
                         <div class="col-lg-3"><i class="fas fa-stopwatch fa-3x"></i></div>
-                        <div class="col-lg-9">1. Répondez au questionnaire en moins de 3 minutes</div>
+                        <div class="col-lg-9">1. Répondez à un mini questionnaire en 3 minutes</div>
                     </div>
                 </div>
                 <div class="col-lg-4 p-md-3">
@@ -39,7 +39,7 @@
         </div>
     </div>
 
-    <div class="container-fluid bandeauPromo p-4">
+    <div class="container-fluid bandeauPromo p-5">
 
         <div class="container d-flex flex-row align-items-center justify-content-center">
             <span>Offre spécial : Profitez de l'été pour penser à votre Personal Branding !</span>
@@ -54,10 +54,9 @@
 
                     <div class="col-lg-4 boxArticle">
                         <span class="titleArticle">{{ article.title }}</span><br>
-                        <span class="spanArticle">{{ article.author }}</span><br>
-                        <span class="spanArticle">{{ article.dateOnPublished.date |date ('d/m/Y') }}</span>
+                        <span class="spanArticle">Par {{ article.author }} | le {{ article.dateOnPublished.date |date ('d/m/Y') }}</span><br>
                         <img class="boxImg" src="{{ article.image }}">
-                        <div class="extractArticle">{{ article.content |slice (0, 550) |raw }}... <a href="#" >Lire la suite</a></div>
+                        <div class="extractArticle">{{ article.content |slice (0, 540) |raw }}... <a href="#" >Lire la suite</a></div>
                     </div>
 
                 {% endfor %}

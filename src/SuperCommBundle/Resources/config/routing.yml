@@ -18,8 +18,12 @@ super_comm_blog:
     path:     /vos-outils-web-marketing
     defaults: { _controller: SuperCommBundle:Default:blog }
 
+super_comm_blog_bis:
+    path:     /vos-outils-web-marketing2/{id}
+    defaults: { _controller: SuperCommBundle:Default:findArticleByCategory }
+
 super_comm_ressources:
-    path:     /vos-outils-web-marketing/{categorie}
+    path:     /vos-outils-web-marketing/{category}
     defaults: { _controller: SuperCommBundle:Default:ressources }
 
 super_comm_ressource_detail:
