@@ -10,7 +10,7 @@
 
         <div class="container vue d-flex flex-column align-items-center justify-content-center">
             <h1 class="accrocheHome"></h1>
-            <a class="cta" href="{{ path('super_comm_conseilMinute') }}">Demandez conseil !</a>
+            <a class="cta" href="{{ path('super_comm_conseilMinute') }}">Je demande conseil ›</a>
         </div>
     </div>
 
@@ -39,10 +39,11 @@
         </div>
     </div>
 
-    <div class="container-fluid bandeauPromo p-5">
+    <div class="container-fluid bandeauPromo p-4">
 
         <div class="container d-flex flex-row align-items-center justify-content-center">
-            <span>Offre spécial : Profitez de l'été pour penser à votre Personal Branding !</span>
+            <span>Offre spécial :<br>
+                Profitez de la rentrée pour penser à votre Personal Branding !</span>
         </div>
     </div>
 
@@ -53,10 +54,10 @@
                 {% for article in articles |reverse |slice (0,3) %}
 
                     <div class="col-lg-4 boxArticle">
-                        <span class="titleArticle">{{ article.title }}</span><br>
+                        <a class="readMore" href="{{ path('super_comm_ressource_detail', { 'id' : article.id }) }}" ><span class="titleArticle">{{ article.title }}</span></a><br>
                         <span class="spanArticle">Par {{ article.author }} | le {{ article.dateOnPublished.date |date ('d/m/Y') }}</span><br>
                         <img class="boxImg" src="{{ article.image }}">
-                        <div class="extractArticle">{{ article.content |slice (0, 540) |raw }}... <a href="#" >Lire la suite</a></div>
+                        <div class="extractArticle">{{ article.content |slice (0, 540) |raw }}... <a class="readMore" href="{{ path('super_comm_ressource_detail', { 'id' : article.id }) }}" >Lire la suite</a></div>
                     </div>
 
                 {% endfor %}

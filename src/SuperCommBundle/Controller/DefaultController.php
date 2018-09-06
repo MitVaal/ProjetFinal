@@ -25,12 +25,12 @@ class DefaultController extends Controller
         return $this->render('@SuperComm/Default/conseil_minute.html.twig');
     }
 
-    public function offresAction()
+    public function servicesAction()
     {
         $productRepository = $this->getDoctrine()->getRepository(Product::class);
         $products = $productRepository->findAll();
 
-        return $this->render('@SuperComm/Default/offres.html.twig', array(
+        return $this->render('@SuperComm/Default/services.html.twig', array(
             'products' => $products
         ));
     }
@@ -40,15 +40,6 @@ class DefaultController extends Controller
         return $this->render('@SuperComm/Default/experts.html.twig');
     }
 
-    public function ressourceDetailAction($categorie,$article)
-    {
-        return $this->render('@SuperComm/Default/ressource_detail.html.twig');
-    }
-
-    public function ressourcesAction($categorie)
-    {
-        return $this->render('@SuperComm/Default/ressources.html.twig');
-    }
 
     public function blogAction()
     {
@@ -57,31 +48,21 @@ class DefaultController extends Controller
         $articleRepository = $this->getDoctrine()->getRepository(Article::class);
         $articles = $articleRepository->findAll();
 
-        //$categoryRepository = $this->getDoctrine()->getRepository(Category::class);
-        //$categorys = $categoryRepository->findAll();
-
         return $this->render('@SuperComm/Default/blog.html.twig', array(
             'articles' => $articles,
-          //  'categorys' => $categorys
         ));
     }
 
-/*
-    public function findArticleByCategoryAction($id)
+    public function articleDetailAction($id)  // récupération de l'id envoyé dans le chemin d'url
     {
+        // pour récupérer les éléments  de la table article par rapport à son id grâce à la méthode find du Repo (méthode déjà définie par défaut)
+        $articleRepository = $this->getDoctrine()->getRepository(Article::class);
+        $article = $articleRepository->find($id);
 
-        $article = $this->getDoctrine()->getRepository(Article::class)->findByCategory($id);
-        $category = $article->getCategory();
-
-        return $this->render('@SuperComm/Default/blog_bis.html.twig', array(
-            'article' => $article,
-            'category' => $category
+        return $this->render('@SuperComm/Default/ressource_detail.html.twig', array(
+            'article' => $article
         ));
-
     }
-
-*/
-
 
     public function mentionsLegalesAction()
     {

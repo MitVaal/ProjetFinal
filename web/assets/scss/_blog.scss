@@ -1,10 +1,21 @@
 .bandeauBlog{
-  border-top: solid;
   border-bottom: solid;
-  border-width: 2px;
+  border-width: 1px;
   border-color: $logoColorGreen;
   background-image: url("../images/BandeauBlog.jpg");
   background-size: cover;
+  height: 150px;
+}
+
+.titleBlog{
+  font-size: 1.8em;
+  color: $logoColorGreen;
+}
+
+.subTitleBlog{
+  font-size: 1em;
+  color: $logoColorGreen;
+  margin-left: 100px;
 }
 
 .bigBox{
@@ -22,16 +33,21 @@
 
 .titleArticleBlog{
   font-size: 1.1em;
+  color: $chartColor;
 }
 
-.titreBlog{
-  font-size: 1.6em;
+.readMore{
+  color: $chartColor;
+  font-size: 1.1em;
+}
+
+.readMore:hover{
   color: $logoColorGreen;
 }
 
 .sideBar{
   padding-top: 10px;
-  padding-bottom: 30px;
+  padding-bottom: 10px;
   border-bottom-color: $logoColorGreen;
   border-bottom-width: 5px;
   border-bottom-style: double;
@@ -83,4 +99,23 @@
 
 .fa.fa-search{
   color: white;
+}
+
+.linksBlog{
+  text-decoration-line: none!important;
+  color: $chartColor!important;
+  font-size: 0.9em;
+}
+
+.linksBlog:hover{
+  color: $logoColorGreen!important;
+}
+
+.imgBlogSidebar{
+  width: 50px;
+}
+
+.titleSidebar{
+  color: $logoColorGreen;
+  font-weight: bold;
 }

@@ -8,7 +8,10 @@
     <div class="container-fluid bandeauBlog p-5">
 
         <div class="container d-flex flex-row align-items-center justify-content-center">
-            <h2 class="titreBlog">La boîte à outils proposée par SuperComm</h2>
+            <div class="row">
+                <h2 class="titleBlog col-lg-12">La boîte à outils<span style="font-size: x-small">©</span></h2><br>
+                <p class="subTitleBlog">Proposée par SuperComm</p>
+            </div>
         </div>
     </div>
 
@@ -24,9 +27,9 @@
 
                             <div class="col-lg-5 box"><img class="boxImg" src="{{ article.image }}"></div>
                             <div class="col-lg-7 box">
-                                <span class="titleArticleBlog">{{ article.title }}</span><br>
+                                <a class="readMore" href="{{ path('super_comm_ressource_detail', { 'id' : article.id }) }}" ><span class="titleArticleBlog">{{ article.title }}</span></a><br>
                                 <span class="spanArticle">Par {{ article.author }} | le {{ article.dateOnPublished.date |date ('d/m/Y') }}</span><br>
-                                <div>{{ article.content |slice (0, 540) |raw }}... <a href="#" >Lire la suite</a></div>
+                                <div>{{ article.content |slice (0, 540) |raw }}... <a class="readMore" href="{{ path('super_comm_ressource_detail', { 'id' : article.id }) }}" >Lire la suite</a></div>
                             </div>
 
                         {% endfor %}
@@ -55,9 +58,42 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row sideBar">RESEAUX SOCIAUX</div>
-                    <div class="row sideBar">BLOGS A SUIVRE</div>
-                    <div class="row sideBar">OUTILS SEO</div>
+                    <div class="row sideBar">
+                        <div class="col-lg-12"><p class="titleSidebar">RESEAUX SOCIAUX</p></div>
+                        <div class="col-lg-4"><a class="linksBlog" href="#"><i class="fab fa-twitter fa-2x"></i></a></div>
+                        <div class="col-lg-4"><a class="linksBlog" href="#"><i class="fab fa-facebook-f fa-2x"></i></a></div>
+                        <div class="col-lg-4"><a class="linksBlog" href="#"><i class="fab fa-linkedin-in fa-2x"></i></a></div>
+                    </div>
+
+                    <div class="row sideBar">
+                        <div class="col-lg-12"><p class="titleSidebar">BLOGS A SUIVRE</p></div>
+                        <div class="col-lg-4"><img class="imgBlogSidebar" src="{{ asset('assets/images/logoBDM.png') }}" alt="Logo Blog du Modérateur"></div>
+                        <div class="col-lg-8 p-2"><a class="linksBlog" href="https://www.blogdumoderateur.com/" target="_blank">Blog du Modérateur</a></div>
+                        <div class="col-lg-4"><img class="imgBlogSidebar" src="{{ asset('assets/images/logo1min30.png') }}" alt="Logo Blog de l'agence 1min30"></div>
+                        <div class="col-lg-8 p-2"><a class="linksBlog" href="https://www.1min30.com/le-blog" target="_blank">Agence 1min30</a></div>
+                        <div class="col-lg-4"><img class="imgBlogSidebar" src="{{ asset('assets/images/logoWMCo.png') }}" alt="Logo Blog Webmarketing&Co'm"></div>
+                        <div class="col-lg-8 p-2"><a class="linksBlog" href="https://www.webmarketing-com.com/" target="_blank">Webmarketing&Co'm</a></div>
+                        <div class="col-lg-4"><img class="imgBlogSidebar" src="{{ asset('assets/images/LogoAbondance.png') }}" alt="Logo Blog Abondance"></div>
+                        <div class="col-lg-8 p-2"><a class="linksBlog" href="https://www.webmarketing-com.com/" target="_blank">Abondance</a></div>
+                        <div class="col-lg-4"><img class="imgBlogSidebar" src="{{ asset('assets/images/LogoDescary.png') }}" alt="Logo Blog Descary.com"></div>
+                        <div class="col-lg-8 p-2"><a class="linksBlog" href="https://www.webmarketing-com.com/" target="_blank">Descary.com</a></div>
+                        <div class="col-lg-4"><img class="imgBlogSidebar" src="{{ asset('assets/images/logoEcrirePourLeWeb.png') }}" alt="Logo Blog Ecrire pour le Web"></div>
+                        <div class="col-lg-8 p-2"><a class="linksBlog" href="https://www.webmarketing-com.com/" target="_blank">Ecrire pour le Web</a></div>
+                    </div>
+
+                    <div class="row sideBar">
+                        <div class="col-lg-12"><p class="titleSidebar">OUTILS SEO</p></div>
+                        <ul>
+                            <li class="col-lg-12"><a class="linksBlog" href="https://alyze.info" target="_blank">alyze.info</a></li>
+                            <li class="col-lg-12"><a class="linksBlog" href="https://answerthepublic.com" target="_blank">answerthepublic.com</a></li>
+                            <li class="col-lg-12"><a class="linksBlog" href="https://www.outils-atypicom.fr" target="_blank">outils-atypicom.fr</a></li>
+                            <li class="col-lg-12"><a class="linksBlog" href="https://www.seoquantum.com" target="_blank">seoquantum.com</a></li>
+                            <li class="col-lg-12"><a class="linksBlog" href="https://keywordtool.io" target="_blank">keywordtool.io</a></li>
+                            <li class="col-lg-12"><a class="linksBlog" href="https://fr.oncrawl.com" target="_blank">fr.oncrawl.com</a></li>
+                            <li class="col-lg-12"><a class="linksBlog" href="https://ahrefs.com/fr/" target="_blank">ahrefs.com</a></li>
+                            <li class="col-lg-12"><a class="linksBlog" href="https://majestic.com/" target="_blank">majestic.com</a></li>
+                        </ul>
+                    </div>
 
                 </div>
 

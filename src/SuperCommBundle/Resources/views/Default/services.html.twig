@@ -1,0 +1,25 @@
+{% extends '@SuperComm/Default/base.html.twig' %}
+
+    {% block title %}<title>Nos Offres</title>{% endblock %}
+
+
+{% block content %}
+
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row p-3">
+                {% for product in products |reverse %}
+
+                    <div class="col-lg-4 boxService">
+                        <img class="boxImg" src="{{ product.image }}">
+                        <p class="titleService">{{ product.title }}</p>
+                        <p>{{ product.content|raw }}</p>
+                    </div>
+
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+
+
+{% endblock %}

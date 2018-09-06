@@ -1,0 +1,39 @@
+.bandeauConsultMinute{
+  height: 90px;
+  padding: 25px;
+}
+
+.fullContent{
+  height: 220px;
+  width: 350px;
+  text-align: center;
+}
+
+
+.emptyContent{
+  height: 220px;
+  width: 350px;
+
+}
+
+.rightBorder{
+  border-right: 1px solid #00a8b2;
+}
+
+.bigBorder{
+  border-style: solid;
+  border-color: $chartColor;
+  border-radius: 5px;
+  border-width: 1px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.colorIcon{
+  color: $chartColor;
+}
+
+.contentConsultMinute{
+  font-size: 1em;
+  color: $greycolor;
+}

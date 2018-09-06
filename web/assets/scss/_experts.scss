@@ -1,0 +1,25 @@
+.boxExpert{
+  padding-bottom: 30px;
+  border-bottom: solid;
+  border-right: solid;
+  border-right-color: $chartColor;
+  border-right-width: 1px;
+  border-bottom-color: $chartColor;
+  border-bottom-width: 1px;
+}
+
+.iconExpert{
+  text-align: center;
+  color: $chartColor;
+}
+
+.contentExpert{
+  text-align: justify;
+  color: $greycolor;
+  font-size: 0.95em;
+}
+
+.titleExpert{
+  color: $logoColorGreen;
+  font-size: 1.3em;
+}

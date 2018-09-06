@@ -87,7 +87,7 @@ easy_admin:
     design:
         menu:
             - { entity: 'User', label: 'Utilisateurs', icon: 'users' }
-            - { entity: 'Product', label: 'Produits', icon: 'shopping-cart' }
+            - { entity: 'Product', label: 'Services', icon: 'tasks' }
             - { entity: 'Article', label: 'Articles', icon: 'th-large' }
             - { entity: 'Category', label: 'Catégories', icon: 'tags' }
         brand_color: '#00a8b2'
@@ -103,6 +103,8 @@ easy_admin:
             class: SuperCommBundle\Entity\User
             label: 'Utilisateurs'
             list:
+                actions:
+                    - { name: 'new', label: 'Créer un utilisateur' }
                 title: 'Utilisateurs et Administrateurs'
                 max_results: 10
                 fields:
@@ -149,8 +151,10 @@ easy_admin:
 
         Product:
             class: SuperCommBundle\Entity\Product
-            label: 'Produits'
+            label: 'Services'
             list:
+                actions:
+                    - { name: 'new', label: 'Créer un service' }
                 title: 'Services proposés et/ou packagés'
                 fields:
                     - id
@@ -159,15 +163,15 @@ easy_admin:
                     - { property: 'content', label: 'Contenu' }
                     - { property: 'user', label: 'SuperAdmin' }
             form:
-                title: 'Modifier le produit'
+                title: 'Modifier le service'
                 fields:
                     - { property: 'title', label: 'Titre' }
-                    - { property: 'image', label: 'Image', type: 'image' }
+                    - { property: 'image', label: 'Image' }
                     - { property: 'content', label: 'Contenu', type: 'ckeditor' }
                     - { type: 'divider' }
                     - { property: 'user', label: 'SuperAdmin' }
             show:
-                title: 'Produit'
+                title: 'Service'
                 fields:
                     - { property: 'title', label: 'Titre' }
                     - { property: 'image', label: 'Image', type: 'image' }
@@ -177,6 +181,8 @@ easy_admin:
             class: SuperCommBundle\Entity\Article
             label: 'Articles'
             list:
+                actions:
+                    - { name: 'new', label: 'Créer un article' }
                 title: 'Articles du blog'
                 max_results: 5
                 fields:
@@ -214,6 +220,8 @@ easy_admin:
             class: SuperCommBundle\Entity\Category
             label: 'Catégories des articles'
             list:
+                actions:
+                    - { name: 'new', label: 'Créer une catégorie' }
                 title: 'Catégories dans lesquelles classer les articles'
                 fields:
                     - id

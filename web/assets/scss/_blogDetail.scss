@@ -1,0 +1,41 @@
+.returnPage{
+  color: $chartColor;
+}
+
+.returnPage:hover{
+  color: $logoColorGreen;
+}
+
+.articleDetailBorder{
+  border-style: solid;
+  border-color: $chartColor;
+  border-radius: 5px;
+  border-width: 1px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.boxImgArticle{
+  height: 250px;
+  width: 350px;
+  object-fit: cover;
+}
+
+.articleDetailTitle{
+  font-size: 1.4em;
+  color: $chartColor;
+}
+
+.spanArticleDetail{
+  font-size: 0.9em;
+  color: $logoColorGreen;
+  border-bottom : solid;
+  border-bottom-color: $logoColorGreen;
+  border-bottom-width: 1px;
+}
+
+.articleDetailContent{
+  padding: 15px;
+  margin-top: 10px;
+
+}
