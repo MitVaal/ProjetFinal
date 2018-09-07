@@ -3,12 +3,23 @@
 <div class="container-fluid vueForm">
     <div class="container vueForm d-flex flex-column justify-content-center align-items-center ">
 
-{{ form_start(form, { 'action': path('fos_user_resetting_reset', {'token': token}), 'attr': { 'class': 'fos_user_resetting_reset' } }) }}
-    {{ form_widget(form) }}
-    <div>
-        <input type="submit" value="{{ 'resetting.reset.submit'|trans }}" />
-    </div>
-{{ form_end(form) }}
+
+        <div>
+            {{ form_start(form, { 'action': path('fos_user_resetting_reset', {'token': token}), 'attr': { 'class': 'fos_user_resetting_reset' } }) }}
+        </div>
+        <div class="borderForm">
+            <div>
+                {{ form_widget(form, {'attr': {'class': 'labelContactForm'}}) }}
+            </div>
+            {{ form_rest(form) }}
+
+
+
+            <div>
+                <input class="boutonReset" type="submit" value="{{ 'resetting.reset.submit'|trans }}" />
+            </div>
+        </div>
+        {{ form_end(form) }}
 
     </div>
 </div>

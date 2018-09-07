@@ -126,6 +126,11 @@ h1::before {
   border-width: 1px;
   padding: 20px; }
 
+.titleLoginForm {
+  color: #3B7271;
+  font-size: 1em;
+  text-align: center; }
+
 .labelContactForm {
   color: #00a8b2;
   padding: 5px;
@@ -208,6 +213,29 @@ h1::before {
   justify-content: center; }
 
 .boutonResetPassword:hover {
+  background-color: #00a8b2;
+  color: white; }
+
+.iconPlane {
+  color: #00a8b2;
+  margin-bottom: 20px; }
+
+.contentCheckemail {
+  color: #3B7271;
+  text-align: center;
+  width: 600px; }
+
+.boutonReset {
+  height: 30px;
+  width: 200px;
+  color: #00a8b2;
+  border-style: solid;
+  border-color: #00a8b2;
+  border-radius: 5px;
+  margin-top: 20px;
+  justify-content: center; }
+
+.boutonReset:hover {
   background-color: #00a8b2;
   color: white; }
 
@@ -381,13 +409,25 @@ h1::before {
   height: 90px;
   padding: 25px; }
 
+.BgImgConsultMinute {
+  background-image: url("../images/conseilMinute.jpg");
+  background-size: cover; }
+
 .fullContent {
-  height: 220px;
+  height: 200px;
+  width: 350px;
+  text-align: center;
+  border-bottom-style: solid;
+  border-color: #00a8b2;
+  border-width: 1px; }
+
+.lastFullContent {
+  height: 200px;
   width: 350px;
   text-align: center; }
 
 .emptyContent {
-  height: 220px;
+  height: 200px;
   width: 350px; }
 
 .rightBorder {
@@ -399,7 +439,9 @@ h1::before {
   border-radius: 5px;
   border-width: 1px;
   padding: 10px;
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  margin-top: 20px;
+  background-color: white; }
 
 .colorIcon {
   color: #00a8b2; }

@@ -43,7 +43,7 @@ class DefaultController extends Controller
 
     public function blogAction()
     {
-//        $this->denyAccessUnlessGranted("ROLE_ADMIN");
+        $this->denyAccessUnlessGranted("ROLE_USER"); // impossible d'accéder au blog sans être connecté
 
         $articleRepository = $this->getDoctrine()->getRepository(Article::class);
         $articles = $articleRepository->findAll();

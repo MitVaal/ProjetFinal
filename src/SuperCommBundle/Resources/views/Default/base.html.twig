@@ -16,7 +16,7 @@
     <link rel="icon" sizes="64x64" href="{{ asset('assets/images/favicons/favicon-64.png') }}" type="image/png">
     <link rel="icon" sizes="96x96" href="{{ asset('assets/images/favicons/favicon-96.png') }}" type="image/png">
     <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
-    {% block title %}<title>Base SuperComm</title>{% endblock %}
+    {% block title %}<title>SuperComm</title>{% endblock %}
 </head>
 <body>
 
@@ -34,13 +34,13 @@
                     <a class="nav-link ongletMenu" href="{{ path('super_comm_conseilMinute') }}">CONSEIL A LA MINUTE</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link ongletMenu" href="{{ path('super_comm_services') }}">NOS SERVICES</a>
+                    <a class="nav-link ongletMenu" href="{{ path('super_comm_services') }}">NOS AUTRES SERVICES</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link ongletMenu" href="{{ path('super_comm_experts') }}">NOS EXPERTS</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link ongletMenu" href="{{ path('super_comm_ressources') }}">VOS RESSOURCES</a>
+                    <a class="nav-link ongletMenu" href="{{ path('super_comm_ressources') }}">VOTRE BOITE A OUTILS</a>
                 </li>
                 {% if not app.user %}<li class="nav-item">
                     <a class="nav-link boutonMenu" href="{{ path('fos_user_security_login') }}">CONNEXION</a>

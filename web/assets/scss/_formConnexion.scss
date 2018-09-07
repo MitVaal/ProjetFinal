@@ -11,6 +11,13 @@
 
 }
 
+.titleLoginForm{
+  color: $logoColorGreen;
+  font-size: 1em;
+  text-align: center;
+
+}
+
 .labelContactForm{
   color: $chartColor;
   padding: 5px;
@@ -107,6 +114,33 @@
 }
 
 .boutonResetPassword:hover{
+  background-color: $chartColor;
+  color: white;
+}
+
+.iconPlane{
+  color: $chartColor;
+  margin-bottom: 20px;
+}
+
+.contentCheckemail{
+  color: $logoColorGreen;
+  text-align: center;
+  width: 600px;
+}
+
+.boutonReset{
+  height: 30px;
+  width: 200px;
+  color: $chartColor;
+  border-style: solid;
+  border-color: $chartColor;
+  border-radius: 5px;
+  margin-top: 20px;
+  justify-content: center;
+}
+
+.boutonReset:hover{
   background-color: $chartColor;
   color: white;
 }

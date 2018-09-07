@@ -7,6 +7,10 @@
 <div class="container-fluid vueForm">
     <div class="container vueForm d-flex flex-column justify-content-center align-items-center ">
 
+        <h2 class="titleLoginForm p-3">Pour accéder au ressources, vous devez être connecté.<br>
+            Il s'agit d'une véritable boîte à outils pour vous aider conquérir le Web.<br>
+            <br>Si vous n'avez pas encore de compte, n'hésitez pas à en créer un en 3 clics !</h2>
+
         <form class="borderForm" action="{{ path("fos_user_security_check") }}" method="post">
             {% if csrf_token %}
                 <input type="hidden" name="_csrf_token" value="{{ csrf_token }}" />

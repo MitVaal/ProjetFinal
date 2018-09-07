@@ -3,7 +3,12 @@
 {% trans_default_domain 'FOSUserBundle' %}
 
 {% block fos_user_content %}
-<p>
-{{ 'resetting.check_email'|trans({'%tokenLifetime%': tokenLifetime})|nl2br }}
-</p>
+    <div class="container-fluid vueForm">
+        <div class="container vueForm d-flex flex-column justify-content-center align-items-center ">
+            <i class="far fa-paper-plane fa-4x iconPlane"></i>
+            <p class="contentCheckemail borderForm">
+                {{ 'resetting.check_email'|trans({'%tokenLifetime%': tokenLifetime})|nl2br }}
+            </p>
+        </div>
+    </div>
 {% endblock %}
