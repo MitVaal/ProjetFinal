@@ -11,6 +11,20 @@
   color: $logoColorGreen;
 }
 
+/** mediaqueries Services
+*/
+
+@media (max-width: 768px) {
+  .boxService{
+    background-color: $chartColor;
+    margin-bottom: 10px;
+  }
+
+  .boxImg{
+    width: 260px;
+  }
+}
+
 
 
 

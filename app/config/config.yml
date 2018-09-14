@@ -74,8 +74,8 @@ fos_user:
     firewall_name: main
     user_class: SuperCommBundle\Entity\User
     from_email:
-        address: "mathilde.vaal@lapiscine.pro"
-        sender_name: "Mathilde Vaal"
+        address: "hello@supercomm.fr"
+        sender_name: "SuperComm"
     registration:
         confirmation:
             enabled: true
@@ -88,16 +88,21 @@ easy_admin:
     site_name: 'Admin SuperComm'
     design:
         menu:
+            - { label: 'SuperAdmin' }
             - { entity: 'User', label: 'Utilisateurs', icon: 'users' }
             - { entity: 'Product', label: 'Services', icon: 'tasks' }
+            - { label: 'Admin' }
             - { entity: 'Article', label: 'Articles', icon: 'th-large' }
             - { entity: 'Category', label: 'Catégories', icon: 'tags' }
+            - { label: 'SuperComm' }
+            - { label: 'Retour sur le site', route: 'super_comm_homepage' }
         brand_color: '#00a8b2'
         color_scheme: 'light'
         assets:
             favicon: 'assets/images/favicons/favicon.png'
     list:
-        actions: ['show']
+        actions:
+        - { name: 'show' }
         max_results: 15
     entities:
 

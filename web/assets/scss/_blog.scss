@@ -119,3 +119,32 @@
   color: $logoColorGreen;
   font-weight: bold;
 }
+
+/* mediaqueries Blog
+*/
+
+@media (max-width: 768px) {
+
+  .subTitleBlog{
+    margin-left: 50px;
+  }
+  .bigBox{
+    padding-right: 0;
+    border-right: none;
+  }
+
+  .box{
+    text-align: center;
+  }
+
+  .moduleMobile{
+    display: none;
+  }
+
+  .sideBar{
+    border-top-color: $logoColorGreen;
+    border-top-width: 5px;
+    border-top-style: double;
+    border-bottom-style: none;
+  }
+}

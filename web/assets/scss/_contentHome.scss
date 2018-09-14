@@ -15,6 +15,12 @@
   text-align: center;
 }
 
+.animation{
+  animation-name: slideInLeft;
+  animation-duration: 1.5s;
+  transition: ease-in;
+}
+
 .cta {
   background-color: #00a8b2;
   padding: 10px 30px;

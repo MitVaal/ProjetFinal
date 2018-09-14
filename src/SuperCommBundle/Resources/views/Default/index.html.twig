@@ -9,7 +9,7 @@
     <div class="container-fluid bgImage vue">
 
         <div class="container vue d-flex flex-column align-items-center justify-content-center">
-            <h1 class="accrocheHome"></h1>
+            <h1 class="accrocheHome animation"></h1>
             <a class="cta" href="{{ path('super_comm_conseilMinute') }}">Je demande conseil ›</a>
         </div>
     </div>
@@ -57,7 +57,8 @@
                         <a class="readMore" href="{{ path('super_comm_ressource_detail', { 'id' : article.id }) }}" ><span class="titleArticle">{{ article.title }}</span></a><br>
                         <span class="spanArticle">Par {{ article.author }} | le {{ article.dateOnPublished.date |date ('d/m/Y') }}</span><br>
                         <img class="boxImg" src="{{ article.image }}">
-                        <div class="extractArticle">{{ article.content |slice (0, 540) |raw }}... <a class="readMore" href="{{ path('super_comm_ressource_detail', { 'id' : article.id }) }}" >Lire la suite</a></div>
+                        <div class="extractArticle">{{ article.content |slice (0, 540) |raw }}...
+                            <a class="readMore" href="{{ path('super_comm_ressource_detail', { 'id' : article.id }) }}" >Lire la suite</a></div>
                     </div>
 
                 {% endfor %}

@@ -1,0 +1,46 @@
+.vueForm{
+  height: 82vh;
+}
+
+.borderForm{
+  border-style: solid;
+  border-color: $chartColor;
+  border-radius: 5px;
+  border-width: 1px;
+  padding: 20px;
+
+}
+
+.iconFont{
+  color: $chartColor;
+  margin-bottom: 20px;
+}
+
+.statusCode{
+  color: $chartColor;
+}
+
+.contentError{
+  color: $logoColorGreen;
+  text-align: center;
+  width: 600px;
+  font-weight: bold;
+}
+
+.ctaError {
+  background-color: white;
+  padding: 10px 30px;
+  font-size: 1.2em;
+  color: $chartColor;
+  border-radius: 10px;
+  border-color: $chartColor;
+  border-style: solid;
+  border-width: 1px;
+  width: 250px;
+  text-decoration-line: none!important;
+}
+
+.ctaError:hover{
+  color: white;
+  background-color: $chartColor;
+}

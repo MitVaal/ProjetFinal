@@ -1,5 +1,5 @@
 .boxExpert{
-  padding-bottom: 30px;
+  height: 200px;
   border-bottom: solid;
   border-right: solid;
   border-right-color: $chartColor;
@@ -11,6 +11,7 @@
 .iconExpert{
   text-align: center;
   color: $chartColor;
+  align-self: baseline;
 }
 
 .contentExpert{
@@ -22,4 +23,32 @@
 .titleExpert{
   color: $logoColorGreen;
   font-size: 1.3em;
+}
+
+.iconArrow{
+  color: $chartColor;
+}
+
+
+/* mediaqueries Experts
+*/
+
+@media (max-width: 768px) {
+  .boxExpert{
+    height: auto;
+    margin: 10px;
+  }
+
+  .titleExpert{
+    font-size: 1.2em;
+  }
+
+  .iconExpert{
+    display: none;
+  }
+
+  .fontSizeMobile{
+    font-size: 0.9em;
+  }
+
 }

@@ -28,3 +28,23 @@
     color: $logoColorGreen!important;
   }
 }
+
+
+
+/* mediaqueries footer
+*/
+
+@media (max-width: 768px) {
+  .mediaQueries{
+    display: none;
+  }
+
+  .contentFooter{
+    font-size: 1.2em;
+    color: $logoColorGreen;
+  }
+
+  .linkMailto{
+    font-size: 1.2em;
+  }
+}

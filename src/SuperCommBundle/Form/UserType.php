@@ -19,7 +19,7 @@ class UserType extends AbstractType
                 ->add('firstname')
                 ->add('status', ChoiceType::class, array(
                 'choices'=> array(
-                    'Une PME'=> 'Une PME', 'Une starup'=> 'Une starup', 'Une TPE'=> 'Une TPE',
+                    'Une PME'=> 'Une PME', 'Une startup'=> 'Une startup', 'Une TPE'=> 'Une TPE',
                     'En libéral dans le médical'=> 'En libéral dans le médical', 'En libéral dans le juridique'=> 'En libéral dans le juridique',
                     'Un(e) confrère ou un(e) enseignat(e)'=> 'Un(e) confrère ou un(e) enseignat(e)', 'Un(e) étudiant(e)'=> 'Un(e) étudiant(e)',
                     "En recherche d'emploi"=> "En recherche d'emploi" )));
@@ -47,6 +47,5 @@ class UserType extends AbstractType
     {
         return 'supercommbundle_user';
     }
-
 
 }

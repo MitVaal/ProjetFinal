@@ -19,6 +19,18 @@
 .logoMenu {
   width: 200px; }
 
+/* mediaqueries MenuHamburger
+*/
+@media (max-width: 768px) {
+  .menuBurger {
+    background-color: white;
+    z-index: 10; }
+
+  .boutonMenu {
+    background-color: white;
+    color: #3B7271 !important;
+    font-weight: bold;
+    font-size: 0.8em; } }
 .footer {
   background-color: #00a8b2;
   color: white;
@@ -43,6 +55,18 @@
   .linkMailto :hover {
     color: #3B7271 !important; }
 
+/* mediaqueries footer
+*/
+@media (max-width: 768px) {
+  .mediaQueries {
+    display: none; }
+
+  .contentFooter {
+    font-size: 1.2em;
+    color: #3B7271; }
+
+  .linkMailto {
+    font-size: 1.2em; } }
 .bgImage {
   background-image: url("../images/Bg_homePage.jpg");
   background-size: cover; }
@@ -55,6 +79,11 @@
   margin: 20px;
   color: white;
   text-align: center; }
+
+.animation {
+  animation-name: slideInLeft;
+  animation-duration: 1.5s;
+  transition: ease-in; }
 
 .cta {
   background-color: #00a8b2;
@@ -155,11 +184,12 @@ h1::before {
   color: white; }
 
 .boutonInscription {
+  background-color: #00a8b2;
   margin: 0 auto;
   height: 30px;
   padding-top: 2px;
   width: 200px;
-  color: #00a8b2 !important;
+  color: white !important;
   border-style: solid;
   border-width: 1px;
   border-color: #00a8b2;
@@ -168,12 +198,12 @@ h1::before {
   text-align: center; }
   .boutonInscription a {
     text-decoration-line: none;
-    color: #00a8b2; }
+    color: white; }
 
 .boutonInscription:hover {
-  background-color: #00a8b2; }
+  background-color: white; }
   .boutonInscription:hover a {
-    color: white !important; }
+    color: #00a8b2 !important; }
 
 .forgetPassword {
   font-size: small;
@@ -197,10 +227,6 @@ h1::before {
   .boutonRegister a {
     text-decoration-line: none;
     color: #00a8b2; }
-
-.boutonRegister:hover {
-  background-color: #00a8b2;
-  color: white !important; }
 
 .boutonResetPassword {
   height: 30px;
@@ -239,6 +265,11 @@ h1::before {
   background-color: #00a8b2;
   color: white; }
 
+/* mediaqueries Form
+*/
+@media (max-width: 768px) {
+  .vueForm {
+    height: auto !important; } }
 .bandeauBlog {
   border-bottom: solid;
   border-width: 1px;
@@ -339,6 +370,27 @@ h1::before {
   color: #3B7271;
   font-weight: bold; }
 
+/* mediaqueries Blog
+*/
+@media (max-width: 768px) {
+  .subTitleBlog {
+    margin-left: 50px; }
+
+  .bigBox {
+    padding-right: 0;
+    border-right: none; }
+
+  .box {
+    text-align: center; }
+
+  .moduleMobile {
+    display: none; }
+
+  .sideBar {
+    border-top-color: #3B7271;
+    border-top-width: 5px;
+    border-top-style: double;
+    border-bottom-style: none; } }
 .returnPage {
   color: #00a8b2; }
 
@@ -373,6 +425,17 @@ h1::before {
   padding: 15px;
   margin-top: 10px; }
 
+.articleDetail {
+  padding-top: 160px; }
+
+/* mediaqueries Article
+*/
+@media (max-width: 768px) {
+  .articleDetail {
+    padding-top: 0; }
+
+  .boxImgArticle {
+    width: 330px; } }
 .boxService {
   text-align: center;
   padding: 20px; }
@@ -383,8 +446,17 @@ h1::before {
 .titleService {
   color: #3B7271; }
 
+/** mediaqueries Services
+*/
+@media (max-width: 768px) {
+  .boxService {
+    background-color: #00a8b2;
+    margin-bottom: 10px; }
+
+  .boxImg {
+    width: 260px; } }
 .boxExpert {
-  padding-bottom: 30px;
+  height: 200px;
   border-bottom: solid;
   border-right: solid;
   border-right-color: #00a8b2;
@@ -394,17 +466,36 @@ h1::before {
 
 .iconExpert {
   text-align: center;
-  color: #00a8b2; }
+  color: #00a8b2;
+  align-self: baseline; }
 
 .contentExpert {
   text-align: justify;
-  color: #3e3e3e;
+  color: #595959;
   font-size: 0.95em; }
 
 .titleExpert {
   color: #3B7271;
   font-size: 1.3em; }
 
+.iconArrow {
+  color: #00a8b2; }
+
+/* mediaqueries Experts
+*/
+@media (max-width: 768px) {
+  .boxExpert {
+    height: auto;
+    margin: 10px; }
+
+  .titleExpert {
+    font-size: 1.2em; }
+
+  .iconExpert {
+    display: none; }
+
+  .fontSizeMobile {
+    font-size: 0.9em; } }
 .bandeauConsultMinute {
   height: 90px;
   padding: 25px; }
@@ -448,6 +539,80 @@ h1::before {
 
 .contentConsultMinute {
   font-size: 1em;
-  color: #3e3e3e; }
+  color: #595959; }
+
+/* mediaqueries ConseilMinute
+*/
+@media (max-width: 768px) {
+  .emptyContent {
+    display: none; }
+
+  .rightBorder {
+    border-right: none; }
+
+  .fullContent {
+    margin: 15px; }
+
+  .lastFullContent {
+    margin-left: 15px; } }
+.vueForm {
+  height: 82vh; }
+
+.borderForm {
+  border-style: solid;
+  border-color: #00a8b2;
+  border-radius: 5px;
+  border-width: 1px;
+  padding: 20px; }
+
+.iconFont {
+  color: #00a8b2;
+  margin-bottom: 20px; }
+
+.statusCode {
+  color: #00a8b2; }
+
+.contentError {
+  color: #3B7271;
+  text-align: center;
+  width: 600px;
+  font-weight: bold; }
+
+.ctaError {
+  background-color: white;
+  padding: 10px 30px;
+  font-size: 1.2em;
+  color: #00a8b2;
+  border-radius: 10px;
+  border-color: #00a8b2;
+  border-style: solid;
+  border-width: 1px;
+  width: 250px;
+  text-decoration-line: none !important; }
+
+.ctaError:hover {
+  color: white;
+  background-color: #00a8b2; }
+
+@keyframes slideInLeft {
+  from {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+    visibility: visible; }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); } }
+.slideInLeft {
+  -webkit-animation-name: slideInLeft;
+  animation-name: slideInLeft; }
+
+@-webkit-keyframes slideInRight {
+  from {
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+    visibility: visible; }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); } }
 
 /*# sourceMappingURL=style.css.map */

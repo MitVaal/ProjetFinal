@@ -4,6 +4,7 @@
   border-width: 1px;
   border-color: $logoColorGreen;
 }
+
 .boutonMenu {
   background-color: $chartColor;
   border-radius: 5px;
@@ -19,4 +20,22 @@
 
 .logoMenu{
   width: 200px;
+}
+
+/* mediaqueries MenuHamburger
+*/
+
+@media (max-width: 768px) {
+  .menuBurger{
+    background-color: white;
+    z-index: 10;
+  }
+
+  .boutonMenu{
+    background-color: white;
+    color: $logoColorGreen!important;
+    font-weight: bold;
+    font-size: 0.8em;
+  }
+
 }

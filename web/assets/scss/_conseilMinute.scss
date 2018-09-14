@@ -21,7 +21,6 @@
   height: 200px;
   width: 350px;
   text-align: center;
-
 }
 
 
@@ -53,4 +52,27 @@
 .contentConsultMinute{
   font-size: 1em;
   color: $greycolor;
+}
+
+
+/* mediaqueries ConseilMinute
+*/
+
+@media (max-width: 768px) {
+  .emptyContent{
+    display: none;
+  }
+
+  .rightBorder{
+    border-right: none;
+  }
+
+  .fullContent{
+    margin: 15px;
+  }
+
+  .lastFullContent{
+    margin-left: 15px;
+  }
+
 }

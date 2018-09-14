@@ -9,7 +9,7 @@
 
         <div class="container d-flex flex-row align-items-center justify-content-center">
             <div class="row">
-                <h2 class="titleBlog col-lg-12">La boîte à outils<span style="font-size: x-small">©</span></h2><br>
+                <h2 class="titleBlog col-lg-12">La boîte à outils</h2><br>
                 <p class="subTitleBlog">Proposée par SuperComm</p>
             </div>
         </div>
@@ -25,7 +25,7 @@
 
                         {% for article in articles |reverse %}
 
-                            <div class="col-lg-5 box"><img class="boxImg" src="{{ article.image }}"></div>
+                            <div class="col-lg-5 box imgMobile"><img class="boxImg" src="{{ article.image }}"></div>
                             <div class="col-lg-7 box">
                                 <a class="readMore" href="{{ path('super_comm_ressource_detail', { 'id' : article.id }) }}" ><span class="titleArticleBlog">{{ article.title }}</span></a><br>
                                 <span class="spanArticle">Par {{ article.author }} | le {{ article.dateOnPublished.date |date ('d/m/Y') }}</span><br>
@@ -50,7 +50,7 @@
                 </div>
 
                 <div class="col-lg-3 pl-5 pt-3">
-                    <div class="row sideBar">
+                    <div class="row sideBar moduleMobile">
                         <div class="input-group md-form form-sm form-2 pl-0">
                             <input class="form-control my-0 py-1 red-border" type="text" placeholder="Rechercher..." aria-label="Search">
                             <div class="input-group-append">
@@ -58,7 +58,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row sideBar">
+                    <div class="row sideBar moduleMobile">
                         <div class="col-lg-12"><p class="titleSidebar">RESEAUX SOCIAUX</p></div>
                         <div class="col-lg-4"><a class="linksBlog" href="#"><i class="fab fa-twitter fa-2x"></i></a></div>
                         <div class="col-lg-4"><a class="linksBlog" href="#"><i class="fab fa-facebook-f fa-2x"></i></a></div>

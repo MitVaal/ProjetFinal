@@ -16,9 +16,11 @@
                 </div>
 
                 <div class="col-lg-8 ">
-                    <div class="row">
+                    <div class="row articleDetail">
+
+                        <div class="col-lg-12 p-3"><span class="spanArticleDetail">Par {{ article.author }} | le {{ article.dateOnPublished.date |date ('d/m/Y') }}</span></div>
                         <div class="col-lg-12"><h2 class="articleDetailTitle">{{ article.title }}</h2></div>
-                        <div class="col-lg-12"><span class="spanArticleDetail">Par {{ article.author }} | le {{ article.dateOnPublished.date |date ('d/m/Y') }}</span></div>
+
                     </div>
                 </div>
 

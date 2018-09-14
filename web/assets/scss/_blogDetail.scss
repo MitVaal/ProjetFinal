@@ -39,3 +39,21 @@
   margin-top: 10px;
 
 }
+
+.articleDetail{
+  padding-top: 160px;
+}
+
+/* mediaqueries Article
+*/
+
+@media (max-width: 768px) {
+  .articleDetail{
+    padding-top: 0;
+  }
+
+  .boxImgArticle{
+    width: 330px;
+  }
+
+}
