@@ -40,7 +40,6 @@ class DefaultController extends Controller
         return $this->render('@SuperComm/Default/experts.html.twig');
     }
 
-
     public function blogAction()
     {
         $this->denyAccessUnlessGranted("ROLE_USER"); // impossible d'accéder au blog sans être connecté
@@ -68,4 +67,5 @@ class DefaultController extends Controller
     {
         return $this->render('@SuperComm/Default/mentions_legales.html.twig');
     }
+
 }

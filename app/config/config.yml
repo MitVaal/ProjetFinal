@@ -72,6 +72,7 @@ swiftmailer:
 fos_user:
     db_driver: orm # other valid values are 'mongodb' and 'couchdb'
     firewall_name: main
+    # Indicate to fos_user that the entity User is in SuperCommBundle
     user_class: SuperCommBundle\Entity\User
     from_email:
         address: "hello@supercomm.fr"
@@ -79,6 +80,7 @@ fos_user:
     registration:
         confirmation:
             enabled: true
+        # Indicate to fos_user to use the custom registration form in SuperCommBundle
         form:
             type: SuperCommBundle\Form\UserType
 
