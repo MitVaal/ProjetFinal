@@ -2,234 +2,86 @@
 
 namespace SuperCommBundle\Entity;
 
+use Doctrine\ORM\Mapping as ORM;
+use FOS\UserBundle\User;
+
 /**
  * Article
+ *
+ * @ORM\Table(name="article")
+ * @ORM\Entity(repositoryClass="SuperCommBundle\Repository\Article")
  */
 class Article
 {
     /**
      * @var string
+     *
+     * @ORM\Column(name="title", type="string")
      */
     private $title;
 
     /**
      * @var string
+     *
+     * @ORM\Column(name="author", type="string")
      */
     private $author;
 
     /**
      * @var \DateTime
+     *
+     * @ORM\Column(name="date", type="date")
      */
     private $dateOnPublished;
 
     /**
      * @var string
+     *
+     * @ORM\Column(name="image", type="string")
      */
     private $image;
 
     /**
      * @var string
+     *
+     * @ORM\Column(name="content", type="text")
      */
     private $content;
 
     /**
      * @var integer
+     *
+     * @ORM\Column(name="id", type="bigint")
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
      */
     private $id;
 
-
-    public function __toString()
-    {
-        return $this->title;
-    }
-
-    /**
-     * Set title
-     *
-     * @param string $title
-     *
-     * @return Article
-     */
-    public function setTitle($title)
-    {
-        $this->title = $title;
-
-        return $this;
-    }
-
-    /**
-     * Get title
-     *
-     * @return string
-     */
-    public function getTitle()
-    {
-        return $this->title;
-    }
-
-    /**
-     * Set author
-     *
-     * @param string $author
-     *
-     * @return Article
-     */
-    public function setAuthor($author)
-    {
-        $this->author = $author;
-
-        return $this;
-    }
-
-    /**
-     * Get author
-     *
-     * @return string
-     */
-    public function getAuthor()
-    {
-        return $this->author;
-    }
-
-    /**
-     * Set dateOnPublished
-     *
-     * @param \DateTime $dateOnPublished
-     *
-     * @return Article
-     */
-    public function setDateOnPublished($dateOnPublished)
-    {
-        $this->dateOnPublished = $dateOnPublished;
-
-        return $this;
-    }
-
-    /**
-     * Get dateOnPublished
-     *
-     * @return \DateTime
-     */
-    public function getDateOnPublished()
-    {
-        return $this->dateOnPublished;
-    }
-
-    /**
-     * Set image
-     *
-     * @param string $image
-     *
-     * @return Article
-     */
-    public function setImage($image)
-    {
-        $this->image = $image;
-
-        return $this;
-    }
-
-    /**
-     * Get image
-     *
-     * @return string
-     */
-    public function getImage()
-    {
-        return $this->image;
-    }
-
-    /**
-     * Set content
-     *
-     * @param string $content
-     *
-     * @return Article
-     */
-    public function setContent($content)
-    {
-        $this->content = $content;
-
-        return $this;
-    }
-
-    /**
-     * Get content
-     *
-     * @return string
-     */
-    public function getContent()
-    {
-        return $this->content;
-    }
-
-    /**
-     * Get id
-     *
-     * @return integer
-     */
-    public function getId()
-    {
-        return $this->id;
-    }
     /**
      * @var \SuperCommBundle\Entity\User
+     *
+     * @ORM\ManyToOne(targetEntity="SuperCommBundle\Entity\User", inversedBy="article")
+     * @ORM\JoinColumns({
+     *   @ORM\JoinColumn(name="user_id", referencedColumnName="id")
+     * })
      */
     private $user;
 
-
     /**
-     * Set user
+     * @var \Doctrine\Common\Collections\Collection
      *
-     * @param \SuperCommBundle\Entity\User $user
-     *
-     * @return Article
-     */
-    public function setUser(\SuperCommBundle\Entity\User $user = null)
-    {
-        $this->user = $user;
-
-        return $this;
-    }
-
-    /**
-     * Get user
-     *
-     * @return \SuperCommBundle\Entity\User
-     */
-    public function getUser()
-    {
-        return $this->user;
-    }
-    /**
-     * @var \SuperCommBundle\Entity\Category
+     * @ORM\ManyToMany(targetEntity="SuperCommBundle\Entity\Category")
+     * @ORM\JoinTable(name="article_category",
+     *   joinColumns={
+     *     @ORM\JoinColumn(name="article_id", referencedColumnName="id", onDelete="CASCADE")
+     *   },
+     *   inverseJoinColumns={
+     *     @ORM\JoinColumn(name="category_id", referencedColumnName="id", onDelete="CASCADE")
+     *   }
+     * )
      */
     private $category;
 
-
-    /**
-     * Set category
-     *
-     * @param \SuperCommBundle\Entity\Category $category
-     *
-     * @return Article
-     */
-    public function setCategory(\SuperCommBundle\Entity\Category $category = null)
-    {
-        $this->category = $category;
-
-        return $this;
-    }
-
-    /**
-     * Get category
-     *
-     * @return \SuperCommBundle\Entity\Category
-     */
-    public function getCategory()
-    {
-        return $this->category;
-    }
     /**
      * Constructor
      */
@@ -238,27 +90,5 @@ class Article
         $this->category = new \Doctrine\Common\Collections\ArrayCollection();
     }
 
-    /**
-     * Add category
-     *
-     * @param \SuperCommBundle\Entity\Category $category
-     *
-     * @return Article
-     */
-    public function addCategory(\SuperCommBundle\Entity\Category $category)
-    {
-        $this->category[] = $category;
-
-        return $this;
-    }
-
-    /**
-     * Remove category
-     *
-     * @param \SuperCommBundle\Entity\Category $category
-     */
-    public function removeCategory(\SuperCommBundle\Entity\Category $category)
-    {
-        $this->category->removeElement($category);
-    }
 }
+

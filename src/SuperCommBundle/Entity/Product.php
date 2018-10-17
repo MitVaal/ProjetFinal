@@ -2,145 +2,56 @@
 
 namespace SuperCommBundle\Entity;
 
+use Doctrine\ORM\Mapping as ORM;
+
 /**
  * Product
+ *
+ * @ORM\Table(name="product")
+ * @ORM\Entity(repositoryClass="SuperCommBundle\Repository\Product")
  */
 class Product
 {
     /**
      * @var string
+     *
+     * @ORM\Column(name="title", type="string")
      */
     private $title;
 
     /**
      * @var string
+     *
+     * @ORM\Column(name="image", type="string")
      */
     private $image;
 
     /**
      * @var string
+     *
+     * @ORM\Column(name="content", type="text")
      */
     private $content;
 
     /**
      * @var integer
+     *
+     * @ORM\Column(name="id", type="bigint")
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
      */
     private $id;
 
-    public function __toString()
-    {
-        return $this->title;
-    }
-
-
-    /**
-     * Set title
-     *
-     * @param string $title
-     *
-     * @return Product
-     */
-    public function setTitle($title)
-    {
-        $this->title = $title;
-
-        return $this;
-    }
-
-    /**
-     * Get title
-     *
-     * @return string
-     */
-    public function getTitle()
-    {
-        return $this->title;
-    }
-
-    /**
-     * Set image
-     *
-     * @param string $image
-     *
-     * @return Product
-     */
-    public function setImage($image)
-    {
-        $this->image = $image;
-
-        return $this;
-    }
-
-    /**
-     * Get image
-     *
-     * @return string
-     */
-    public function getImage()
-    {
-        return $this->image;
-    }
-
-    /**
-     * Set content
-     *
-     * @param string $content
-     *
-     * @return Product
-     */
-    public function setContent($content)
-    {
-        $this->content = $content;
-
-        return $this;
-    }
-
-    /**
-     * Get content
-     *
-     * @return string
-     */
-    public function getContent()
-    {
-        return $this->content;
-    }
-
-    /**
-     * Get id
-     *
-     * @return integer
-     */
-    public function getId()
-    {
-        return $this->id;
-    }
     /**
      * @var \SuperCommBundle\Entity\User
+     *
+     * @ORM\ManyToOne(targetEntity="SuperCommBundle\Entity\User", inversedBy="product")
+     * @ORM\JoinColumns({
+     *   @ORM\JoinColumn(name="user_id", referencedColumnName="id")
+     * })
      */
     private $user;
 
 
-    /**
-     * Set user
-     *
-     * @param \SuperCommBundle\Entity\User $user
-     *
-     * @return Product
-     */
-    public function setUser(\SuperCommBundle\Entity\User $user = null)
-    {
-        $this->user = $user;
-
-        return $this;
-    }
-
-    /**
-     * Get user
-     *
-     * @return \SuperCommBundle\Entity\User
-     */
-    public function getUser()
-    {
-        return $this->user;
-    }
 }
+
